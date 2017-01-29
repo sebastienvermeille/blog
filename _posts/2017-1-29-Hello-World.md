@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Hello World - V3 of my blog
+lang: en
+ref: hello-world
 ---
 
 Well after almost 5 years on Wordpress I wanted to host my blog on something static to avoid hacking and security leaks.
