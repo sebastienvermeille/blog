@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World - V3 of my blog
+title: Hello World - V3 de mon blog
 lang: fr
 ref: hello-world
 ---
