@@ -72,11 +72,15 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
+languages: ["en", "fr"]
+exclude_from_localizations: ["javascript", "images", "css"]
+
 # Use the following plug-ins
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jemoji
+  - jemoji # Emojy support
+  - jekyll-multiple-languages-plugin # Multilanguage stuff i18n https://github.com/Anthony-Gaudino/jekyll-multiple-languages-plugin
 
 # Exclude these files from your production _site
 exclude:
