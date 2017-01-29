@@ -11,9 +11,9 @@ layout: default
 
   <div class="date">
     {% if page.lang == "en" %}
-    Written on {{ page.date | date: "%B %e, %Y" }}
+    Written on {{ page.date | date: "%Y/%m/%d" }}
     {% else %}
-    Publié le {{ page.date | date: "%d / %m / %Y" }}
+    Publié le {{ page.date | date: "%d/%m/%Y" }}
     {% endif %}
   </div>
 
