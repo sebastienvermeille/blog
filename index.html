@@ -2,17 +2,27 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts | where:"lang", page.lang %}
-    <article class="post">
+{% assign posts=site.posts | where:"lang", "en" %}
+{% for default in posts %}
+{% assign translation = site.posts | where:"ref", default.ref | where:"lang", "fr" %}
+{% if translation[0] %}
+<li><a href="{{ translation[0].url }}">{{ translation[0].title }}</a></li>
+{% else %}
+<li><a href="{{ default.url }}">{{ default.title }}</a> [en] </li>
+{% endif %}
+{% endfor %}
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<!--<div class="posts">-->
+  <!--{% for post in site.posts | where:"lang", "en" %}-->
+    <!--<article class="post">-->
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+      <!--<h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>-->
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+      <!--<div class="entry">-->
+        <!--{{ post.excerpt }}-->
+      <!--</div>-->
+
+      <!--<a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>-->
+    <!--</article>-->
+  <!--{% endfor %}-->
+<!--</div>-->
