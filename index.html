@@ -10,14 +10,14 @@ layout: default
       {% if translation[0] %}
       <h1><a href="{{ site.baseurl }}{{ translation[0].url }}">{{ translation[0].title }}</a></h1>
       <div class="entry">
-      {{ post.excerpt }}
+      {{ translation[0].excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ translation[0].url }}" class="read-more">Lire plus</a>
       {% else %}
       <h1><a href="{{ site.baseurl }}{{ default.url }}">{{ default.title }}</a> [en] </h1>
       <div class="entry">
-        {{ post.excerpt }}
+        {{ default.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ default.url }}" class="read-more">Read More</a>
