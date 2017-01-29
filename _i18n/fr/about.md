@@ -1,7 +1,7 @@
 ---
 layout: page
 title: A Propos
-permalink: /a-propos/
+permalink: /about/
 ---
 
 Quelques informations sur moi
