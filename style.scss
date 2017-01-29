@@ -287,3 +287,8 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+// Manage languages
+.en:lang(en), .fr:lang(fr), .zh:lang(zh){
+  font-weight: bold;
+}
