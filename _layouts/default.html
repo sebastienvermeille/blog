@@ -6,7 +6,7 @@
   {% assign currentLanguage = page.lang[0] %}
   {% endif %}
 
-  <title>{{ currentLanguage }}{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description[currentLanguage] }}</title>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description[currentLanguage] }}</title>
 
   {% include meta.html %}
 
