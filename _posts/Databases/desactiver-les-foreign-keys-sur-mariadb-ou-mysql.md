@@ -5,6 +5,7 @@ description: Commande pour désactiver et/ou réactiver les contraintes de clés
 date: 2012-04-02 00:00
 cover: /media/mariadb.png
 lang: "fr"
+ref: "disable-mariadb-constraints"
 published: true
 comments: true
 github: https://github.com/sebastienvermeille/code.svermeille.com/blob/master/src/content/Databases/desactiver-les-foreign-keys-sur-mariadb-ou-mysql.md
