@@ -19,8 +19,7 @@ SET foreign_key_checks = 0;
 
 
 
-Pour réactiver le contrôle des clés étrangèresgulp
- :
+Pour réactiver le contrôle des clés étrangères :
 ~~~
 SET foreign_key_checks = 1;
 ~~~
