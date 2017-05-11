@@ -71,14 +71,14 @@
    <div class="col s12 m8 l9 xl10">
       <h1>Derniers articles</h1>
       <div class="content">
-         <ul>
-            {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-            {% for post in posts %}
-            <li>
-               <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
-            </li>
-            {% endfor %}
-         </ul>
+         <!--<ul>-->
+         <!--{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}-->
+         <!--{% for post in posts %}-->
+         <!--<li>-->
+         <!--<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>-->
+         <!--</li>-->
+         <!--{% endfor %}-->
+         <!--</ul>-->
       </div>
    </div>
    <h1>Content</h1>
