@@ -11,7 +11,7 @@ github: todo
 tags: ['docker', 'linux', 'debian', 'ubuntu']
 ---
 
-Si comme moi vous avez naivement installé docker en dernière version (oui ça arrive) vous souhaiterez peut-être 
+Si comme moi vous avez naivement installé docker en dernière version (oui ça arrive :sweat_smile:) vous souhaiterez peut-être 
 installer une version plus stable. Dans mon cas Rancher ne supporte pas encore la toute dernière version de docker. 
 J'ai donc du downgradé ma version pour une version antérieure compatible.
 

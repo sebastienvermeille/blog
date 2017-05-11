@@ -11,7 +11,7 @@ github: todo
 tags: ['docker', 'linux']
 ---
 
-Parfois on souhaite simplement nettoyer complètement son host docker. Attention c'est irréversible :)
+Parfois on souhaite simplement nettoyer complètement son host docker. Attention c'est irréversible :nerd_face:
 
 Pour désactiver tous les containers docker:
 ~~~
