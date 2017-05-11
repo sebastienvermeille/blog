@@ -66,6 +66,14 @@ baseurl: ""
 
 permalink: /:title/
 
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "post"
+    values:
+      permalink: "posts/"
+
 # The release of Jekyll Now that you're using
 version: v1.2.0
 
