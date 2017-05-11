@@ -12,11 +12,12 @@
 ul.grid {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: left;
 }
 
 ul.grid li.card {
 	width: 22%;
+	padding: 5px;
 	display: flex;
 	flex-direction: column;
 }
