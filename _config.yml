@@ -73,6 +73,12 @@ defaults:
       type: "post"
     values:
       permalink: "blog/:title"
+  -
+    scope:
+      path: "_howto"
+      type: "post"
+    values:
+      permalink: "howto/:title"
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
