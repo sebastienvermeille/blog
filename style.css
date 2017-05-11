@@ -18,11 +18,12 @@ ul.grid {
 ul.grid li {
 	width: 22%;
 	padding: 5px;
-	display: flex;
+
 	flex-direction: column;
 }
 
 ul.grid li div.card {
+	display: flex;
 	flex-direction: column;
 	height: 100%;
 }
