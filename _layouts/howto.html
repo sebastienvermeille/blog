@@ -75,26 +75,26 @@
       </div>
       <div class="col s12 m8 l9 xl10">
          <div class="content">
-            <div class="row">
-               {% for howto in site.howtos | where:"lang", "fr" %}
-               <div class="col s12 m6 l4 xl2">
-                  <a href="{{ site.baseurl }}{{ howto.url }}">
-                     <div data-mh="articles" class="card card-medium hoverable card-article">
-                        <div data-mh="thumbs" class="card-image">
-                           <img src="{{ howto.cover }}" class="responsive-img">
-                        </div>
-                        <div class="card-content">
-                           <p data-mh="articles-title">{{ howto.title }}</p>
-                        </div>
-                        <div class="card-action"><a
-                                href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
-                           <div class="right"><span data-badge-caption="Databases" class="new badge"></span></div>
-                        </div>
+
+            {% for howto in site.howtos | where:"lang", "fr" %}
+            <div class="col s12 m6 l4 xl2">
+               <a href="{{ site.baseurl }}{{ howto.url }}">
+                  <div data-mh="articles" class="card card-medium hoverable card-article">
+                     <div data-mh="thumbs" class="card-image">
+                        <img src="{{ howto.cover }}" class="responsive-img">
                      </div>
-                  </a>
-               </div>
-               {% endfor %}
+                     <div class="card-content">
+                        <p data-mh="articles-title">{{ howto.title }}</p>
+                     </div>
+                     <div class="card-action"><a
+                             href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
+                        <div class="right"><span data-badge-caption="Databases" class="new badge"></span></div>
+                     </div>
+                  </div>
+               </a>
             </div>
+            {% endfor %}
+
          </div>
       </div>
    </div>
