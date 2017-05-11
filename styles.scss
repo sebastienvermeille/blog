@@ -16,7 +16,7 @@
 }
 
 ul.grid {
-   display: flex;
+   display: flex !important;
    flex-wrap: wrap;
 
    //li.grid-card {
