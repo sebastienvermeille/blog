@@ -69,20 +69,20 @@
 <!-- content:start -->
 <main class="row">
    <div class="col s12 m8 l9 xl10">
-      <h1>Derniers articles</h1>
+      {{ content }}
       <div class="content">
          <ul>
             {% assign posts=site.posts %}
             {% for post in posts %}
             <li>
-               <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
+               <a href="/posts/{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
             </li>
             {% endfor %}
          </ul>
       </div>
    </div>
    <h1>Content</h1>
-   {{ content }}
+
 </main>
 <!-- content:end -->
 
