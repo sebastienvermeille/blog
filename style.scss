@@ -30,7 +30,7 @@ ul.grid {
 
 @media all and (min-width: 40em) {
    ul.grid {
-      li div.card {
+      li {
          width: 50%;
       }
    }
@@ -38,7 +38,7 @@ ul.grid {
 
 @media all and (min-width: 60em) {
    ul.grid {
-      li div.card {
+      li {
          width: 22%;
       }
    }
