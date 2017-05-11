@@ -27,14 +27,14 @@ ul.grid {
 }
 
 @media all and (min-width: 40em) {
-   li.grid-card {
-      width: 50%;
+   .grid-card {
+      width: 50% !important;
    }
 }
 
 @media all and (min-width: 60em) {
-   li.grid-card {
-      width: 33.33%;
+   .grid-card {
+      width: 33.33% !important;
    }
 }
 
