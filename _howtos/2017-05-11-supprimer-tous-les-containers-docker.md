@@ -3,7 +3,7 @@ layout: post
 title: "[Docker] Stopper et supprimer tous les containers docker en 2 lignes"
 description: Commandes pour stopper et supprimer tous les containers instanciés dans docker sur linux.
 date: 2017-05-11 00:00
-cover: /media/docker.png
+cover: /media/cover/docker.png
 lang: "fr"
 published: true
 comments: true

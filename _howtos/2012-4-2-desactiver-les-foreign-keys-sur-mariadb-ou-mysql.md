@@ -3,7 +3,7 @@ layout: post
 title: "[MariaDB/MySQL] Comment désactiver et réactiver les foreign keys"
 description: Commande pour désactiver et/ou réactiver les contraintes de clés étrangères dans une base de données MariaDB ou MySQL
 date: 2012-04-02 00:00
-cover: /media/mariadb.png
+cover: /media/cover/mariadb.png
 lang: "fr"
 published: true
 comments: true
