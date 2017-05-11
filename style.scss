@@ -4,6 +4,12 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+@mixin mobile {
+   @media (max-width: #{$tablet-width - 1px}) {
+      @content;
+   }
+}
+
 @mixin tablet {
    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
       @content;
@@ -38,6 +44,10 @@ ul.grid {
          display: flex;
          flex-direction: column;
          height: 100%;
+      }
+
+      @include mobile {
+         width: 100%;
       }
 
       @include tablet {
