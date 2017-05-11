@@ -1,6 +1,21 @@
 ---
 ---
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+      @content;
+   }
+}
+
+@mixin desktop {
+   @media (min-width: #{$desktop-width}) {
+      @content;
+   }
+}
+
 .site-avatar {
    float: left;
    margin-right: 15px;
@@ -25,22 +40,30 @@ ul.grid {
          height: 100%;
       }
 
-   }
-}
-
-@media all and (min-width: 40em) {
-   ul.grid {
-      li {
+      @include tablet {
          width: 50%;
       }
-   }
-}
 
-@media all and (min-width: 60em) {
-   ul.grid {
-      li {
+      @include desktop {
          width: 22%;
       }
+
    }
 }
+//
+//@media all and (min-width: 40em) {
+//   ul.grid {
+//      li {
+//         width: 50%;
+//      }
+//   }
+//}
+//
+//@media all and (min-width: 60em) {
+//   ul.grid {
+//      li {
+//         width: 22%;
+//      }
+//   }
+//}
 
