@@ -23,13 +23,11 @@
    <!--Let browser know website is optimized for mobile-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-   <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+   <!--&lt;!&ndash;[if lt IE 9]>-->
+   <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+   <!--<![endif]&ndash;&gt;-->
 
-   <!--[if lt IE 9]>
-   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-   <![endif]-->
-
-   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
+   <!--<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>-->
    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description[currentLanguage] }}"
          href="{{ site.baseurl }}/feed.xml"/>
 
@@ -38,8 +36,15 @@
 <body>
 <nav class="light-blue lighten-1" role="navigation">
    <div class="nav-wrapper container">
-      <a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo site-avatar"><img
-              src="{{ site.avatar }}"/></a>
+      <a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo site-avatar">
+         <img src="{{ site.avatar }}"/>
+
+         <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description[currentLanguage] }}</p>
+         </div>
+
+      </a>
       <ul class="right hide-on-med-and-down">
          <li><a href="#">Navbar Link</a></li>
       </ul>
