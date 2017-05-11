@@ -36,7 +36,7 @@ Avec ces 4 mots-clés nous avons rejeté tous les fichiers spécifiques aux IDE 
 
 Il suffit ensuite de cliquer sur le bouton Generate et voici ce qu’on obtient :
 
-```bash
+~~~
 # Created by https://www.gitignore.io/api/eclipse,java,jetbrains,netbeans
 
 ### Eclipse ###
@@ -171,6 +171,6 @@ nbactions.xml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-```
+~~~
 
 Voili voila !
