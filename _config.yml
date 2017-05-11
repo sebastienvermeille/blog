@@ -75,8 +75,8 @@ defaults:
       permalink: "blog/:title"
   -
     scope:
-      path: "_howto"
-      type: "post"
+      path: "_howtos"
+      type: "howto"
     values:
       permalink: "howto/:title"
 
