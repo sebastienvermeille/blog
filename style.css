@@ -23,7 +23,6 @@ ul.grid li {
 ul.grid li div.card {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 }
 
 @media all and (min-width: 40em) {
