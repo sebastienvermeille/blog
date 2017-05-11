@@ -15,7 +15,7 @@ ul.grid {
 	justify-content: left;
 }
 
-ul.grid li.card {
+ul.grid li {
 	width: 22%;
 	padding: 5px;
 	display: flex;
@@ -23,13 +23,13 @@ ul.grid li.card {
 }
 
 @media all and (min-width: 40em) {
-	.grid-card {
+	ul.grid li.card {
 		width: 50%;
 	}
 }
 
 @media all and (min-width: 60em) {
-	.grid-card {
+	ul.grid li.card {
 		width: 22%;
 	}
 }

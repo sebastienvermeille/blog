@@ -75,19 +75,20 @@
       </div>
       <div class="col s12 m8 l9 xl10">
          <ul class="grid">
-
             {% for howto in site.howtos | where:"lang", "fr" %}
-            <li data-mh="articles"
-                class="card card-medium hoverable card-article">
-               <div data-mh="thumbs" class="card-image">
-                  <img src="{{ howto.cover }}" class="responsive-img">
-               </div>
-               <div class="card-content" style="flex: 1 0 auto;">
-                  <p data-mh="articles-title">{{ howto.title }}</p>
-               </div>
-               <div class="card-action"><a
-                       href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
-                  <div class="right"><span data-badge-caption="Databases" class="new badge"></span></div>
+            <li>
+               <div data-mh="articles"
+                    class="card card-medium hoverable card-article">
+                  <div data-mh="thumbs" class="card-image">
+                     <img src="{{ howto.cover }}" class="responsive-img">
+                  </div>
+                  <div class="card-content" style="flex: 1 0 auto;">
+                     <p data-mh="articles-title">{{ howto.title }}</p>
+                  </div>
+                  <div class="card-action"><a
+                          href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
+                     <div class="right"><span data-badge-caption="Databases" class="new badge"></span></div>
+                  </div>
                </div>
             </li>
             {% endfor %}
