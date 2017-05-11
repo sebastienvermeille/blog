@@ -59,18 +59,13 @@
    <div class="col s12 m8 l9 xl10">
       {{ content }}
 
-      {% for howto in site.howtos | where:"lang", "fr" %}
-      <article class="post">
-
-         <h1><a href="{{ site.baseurl }}{{ howto.url }}">{{ howto.title }}</a></h1>
-
-         <div class="entry">
-            {{ howto.excerpt }}
-         </div>
-
-         <a href="{{ site.baseurl }}{{ howto.url }}" class="read-more">Read More</a>
-      </article>
-      {% endfor %}
+      <ul>
+         {% for howto in site.howtos | where:"lang", "fr" %}
+         <li>
+            <a href="{{ site.baseurl }}{{ howto.url }}">{{ howto.title }}</a>
+         </li>
+         {% endfor %}
+      </ul>
 
    </div>
 </main>
