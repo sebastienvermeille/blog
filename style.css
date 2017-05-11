@@ -1,0 +1,34 @@
+.site-avatar {
+	float: left;
+	width: 65px;
+	height: 65px;
+	margin-right: 15px;
+}
+
+.site-avatar img {
+	border-radius: 5px;
+}
+
+ul.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+ul.grid li.card {
+	width: 22%;
+	display: flex;
+	flex-direction: column;
+}
+
+@media all and (min-width: 40em) {
+	.grid-card {
+		width: 50%;
+	}
+}
+
+@media all and (min-width: 60em) {
+	.grid-card {
+		width: 22%;
+	}
+}

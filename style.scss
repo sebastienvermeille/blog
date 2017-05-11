@@ -16,25 +16,26 @@
 }
 
 ul.grid {
-   display: flex !important;
-   flex-wrap: wrap !important;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
 
-   //li.grid-card {
-   //   display: flex;
-   //   padding: 0.5em;
-   //   width: 100%;
-   //}
+   li.card {
+      width: 22%;
+      display: flex;
+      flex-direction: column;
+   }
 }
 
 @media all and (min-width: 40em) {
    .grid-card {
-      width: 50% !important;
+      width: 50%;
    }
 }
 
 @media all and (min-width: 60em) {
    .grid-card {
-      width: 33.33% !important;
+      width: 22%;
    }
 }
 

@@ -74,10 +74,10 @@
          </div>
       </div>
       <div class="col s12 m8 l9 xl10">
-         <ul style="display:flex; flex-wrap: wrap; justify-content: space-between;">
+         <ul class="grid">
 
             {% for howto in site.howtos | where:"lang", "fr" %}
-            <li style="width: 22%;  display: flex; flex-direction: column;" data-mh="articles"
+            <li data-mh="articles"
                 class="card card-medium hoverable card-article">
                <div data-mh="thumbs" class="card-image">
                   <img src="{{ howto.cover }}" class="responsive-img">
