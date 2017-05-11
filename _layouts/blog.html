@@ -58,16 +58,20 @@
 <main class="row">
    <div class="col s12 m8 l9 xl10">
       {{ content }}
-      <div class="content">
-         <ul>
-            {% assign posts=site.posts %}
-            {% for post in posts %}
-            <li>
-               <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-         </ul>
-      </div>
+
+      {% for post in site.posts | where:"lang", "fr" %}
+      <article class="post">
+
+         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+         <div class="entry">
+            {{ post.excerpt }}
+         </div>
+
+         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+      {% endfor %}
+
    </div>
 </main>
 <!-- content:end -->
