@@ -66,6 +66,10 @@ baseurl: ""
 
 permalink: /:title/
 
+collections:
+  howtos:
+    output: true
+
 defaults:
   -
     scope:
@@ -76,7 +80,7 @@ defaults:
   -
     scope:
       path: "_howtos"
-      type: "howto"
+      type: "howtos"
     values:
       permalink: "howto/:title"
 
