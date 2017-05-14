@@ -112,7 +112,7 @@
          <ul class="grid">
             {% for howto in site.howtos | where:"lang", "fr" %}
             <li>
-               <a href="{{ site.baseurl }}{{ howto.url }}" data-mh="articles"
+               <div data-mh="articles"
                     class="card card-medium hoverable card-article">
                   <div data-mh="thumbs" class="card-image">
                      <img src="{{ howto.cover }}" class="responsive-img unselectable">
@@ -128,7 +128,7 @@
                         {% endfor %}
                      </div>
                   </div>
-               </a>
+               </div>
             </li>
             {% endfor %}
          </ul>
