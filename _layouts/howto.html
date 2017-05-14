@@ -96,11 +96,12 @@
                {% assign counter = 0 %}
                {% for tag in tags '%}
                   {% if tag == currentTag %}
+                     a
                      {% assign counter = counter + 1 %}
                   {% endif %}
                {% endfor %}
 
-            <a href="/content/{{ tag }}/"class="collection-item">
+            <a href="/content/{{ currentTag }}/"class="collection-item">
                {{ currentTag }}<span class="badge">{{ counter }}</span>
             </a>
             {% endfor %}
