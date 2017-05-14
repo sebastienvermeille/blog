@@ -92,7 +92,7 @@
             {% assign previous = tag %}
             {% endfor %}
 
-            {% for tag in tags %}
+            {% for tag in unique_tags %}
             <a href="/content/{{ tag }}/"class="collection-item">
                {{ tag }}<span class="badge">1</span>
             </a>
