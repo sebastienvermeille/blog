@@ -40,7 +40,7 @@ layout: index
 
   <div class="collection">
     <div class="collection-header">
-      <h3>Derniers articles</h3>
+      <h2>Derniers articles</h2>
     </div>
     {% for post in site.posts | where:"lang", "en" %}
     <a class="collection-item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
@@ -49,7 +49,7 @@ layout: index
 
   <div class="collection">
     <div class="collection-header">
-      <h3>Derniers tutoriaux</h3>
+      <h2>Derniers tutoriaux</h2>
     </div>
     {% for howto in site.howtos | where:"lang", "en" %}
     <a class="collection-item" href="{{ howto.baseurl }}{{ howto.url }}">{{ howto.title }}</a>
