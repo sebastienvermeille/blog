@@ -100,9 +100,9 @@
                   {% endif %}
                {% endfor %}
 
-            <a href="/content/{{ currentTag }}/"class="collection-item">
-               {{ currentTag }}<span class="badge">{{ counter }}</span>
-            </a>
+               <a href="/content/{{ currentTag }}/"class="collection-item">
+                  {{ currentTag }}<span class="badge">{{ counter }}</span>
+               </a>
             {% endfor %}
          </div>
 
@@ -122,7 +122,11 @@
                   </div>
                   <div class="card-action"><a
                           href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
-                     <div class="right"><span data-badge-caption="Databases" class="new badge"></span></div>
+                     <div class="right">
+                        {% for tag in howto.tags '%}
+                        <span data-badge-caption="{{ tag }}" class="new badge"></span>
+                        {% endfor %}
+                     </div>
                   </div>
                </div>
             </li>
