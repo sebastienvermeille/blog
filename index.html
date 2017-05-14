@@ -27,22 +27,16 @@ layout: base
 <!--</div>-->
 
 <div class="col s12 m8 l9 xl6">
-  <h1>Derniers articles</h1>
 
-  <div class="posts">
+  <ul class="collection with-header">
+    <li class="collection-header"><h4>Derniers articles</h4></li>
     {% for post in site.posts | where:"lang", "en" %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+    <li class="collection-item">
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
-  </div>
+
+  </ul>
 
 </div>
 
