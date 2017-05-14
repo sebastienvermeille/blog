@@ -83,6 +83,12 @@ defaults:
       type: "howtos"
     values:
       permalink: "howto/:title"
+  -
+    scope:
+      path: "_projects"
+      type: "projects"
+    values:
+      permalink: "projects/:title"
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
