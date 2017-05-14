@@ -111,14 +111,14 @@
       <div class="col s12 m8 l9 xl10">
          <ul class="grid">
             {% for howto in site.howtos | where:"lang", "fr" %}
-            <li class="unselectable">
+            <li>
                <div data-mh="articles"
                     class="card card-medium hoverable card-article">
                   <div data-mh="thumbs" class="card-image">
-                     <img src="{{ howto.cover }}" class="responsive-img">
+                     <img src="{{ howto.cover }}" class="responsive-img unselectable">
                   </div>
                   <div class="card-content" style="flex: 1 0 auto;">
-                     <p data-mh="articles-title">{{ howto.title }}</p>
+                     <p data-mh="articles-title" class="unselectable">{{ howto.title }}</p>
                   </div>
                   <div class="card-action"><a
                           href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
