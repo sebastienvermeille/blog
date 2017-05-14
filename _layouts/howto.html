@@ -96,7 +96,7 @@
                {% assign counter = 0 %}
                {% for tag in tags '%}
                   {% if tag == currentTag %}
-                     {% counter = counter + 1 %}
+                     {% assign counter = counter + 1 %}
                {% endfor %}
 
             <a href="/content/{{ tag }}/"class="collection-item">
