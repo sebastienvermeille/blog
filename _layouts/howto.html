@@ -92,9 +92,15 @@
             {% assign previous = tag %}
             {% endfor %}
 
-            {% for tag in unique_tags %}
+            {% for currentTag in unique_tags %}
+               {% assign counter = 0 %}
+               {% for tag in tags '%}
+                  {% if tag == currentTag %}
+                     {% counter = counter + 1 %}
+               {% endfor %}
+
             <a href="/content/{{ tag }}/"class="collection-item">
-               {{ tag }}<span class="badge">1</span>
+               {{ currentTag }}<span class="badge">{{ counter }}</span>
             </a>
             {% endfor %}
          </div>
