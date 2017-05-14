@@ -61,16 +61,21 @@
       {{ content }}
 
       {% for post in site.posts | where:"lang", "fr" %}
-      <article class="post">
 
-         <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-
-         <div class="entry">
-            {{ post.excerpt }}
+      <div class="card horizontal">
+         <div class="card-image">
+            <img src="http://lorempixel.com/100/190/nature/6">
          </div>
-
-         <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-      </article>
+         <div class="card-stacked">
+            <div class="card-content">
+               <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+               <p> {{ post.excerpt }}</p>
+            </div>
+            <div class="card-action">
+               <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+            </div>
+         </div>
+      </div>
       {% endfor %}
 
    </div>
