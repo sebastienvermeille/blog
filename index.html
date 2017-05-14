@@ -28,33 +28,25 @@ layout: base
 
 <div class="col s12 m8 l9 xl6">
 
-  <ul class="collection with-header">
-    <li class="collection-header"><h4>Derniers articles</h4></li>
+  <div class="collection">
+    <div class="collection-header">
+      <h3>Derniers articles</h3>
+    </div>
     {% for post in site.posts | where:"lang", "en" %}
-    <li class="collection-item">
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <a class="collection-item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
-
-  </ul>
+  </div>
 
 </div>
 
 <div class="col s12 m8 l9 xl6">
-  <h1>Derniers tutoriaux</h1>
 
-  <div class="posts">
+  <div class="collection">
+    <div class="collection-header">
+      <h3>Derniers tutoriaux</h3>
+    </div>
     {% for howto in site.howtos | where:"lang", "en" %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ howto.url }}">{{ howto.title }}</a></h1>
-
-      <div class="entry">
-        {{ howto.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ howto.url }}" class="read-more">Read More</a>
-    </article>
+    <a class="collection-item" href="{{ howto.baseurl }}{{ howto.url }}">{{ howto.title }}</a>
     {% endfor %}
   </div>
 
