@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: index
 ---
 
 <!--<div class="posts">-->
@@ -27,6 +27,16 @@ layout: base
 <!--</div>-->
 
 <div class="col s12 m8 l9 xl6">
+  <div class="calendar">
+    <!-- Loading stuff -->
+    Loading the data just for you.
+  </div>
+  <script>
+      GitHubCalendar(".calendar", "sebastienvermeille");
+  </script>
+</div>
+
+<div class="col s12 m8 l9 xl6">
 
   <div class="collection">
     <div class="collection-header">
@@ -36,10 +46,6 @@ layout: base
     <a class="collection-item" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
   </div>
-
-</div>
-
-<div class="col s12 m8 l9 xl6">
 
   <div class="collection">
     <div class="collection-header">
