@@ -97,7 +97,7 @@
                {% for tag in tags '%}
                   {% if tag == currentTag %}
                      a
-                     {% assign counter = counter+1 %}
+                     {% assign counter = (counter + 1) %}
                   {% endif %}
                {% endfor %}
 
