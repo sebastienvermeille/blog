@@ -27,3 +27,5 @@ function locationHashChanged() {
 }
 
 window.addEventListener("hashchange", locationHashChanged, false);
+
+var mixer = mixitup('#howtos-container');
