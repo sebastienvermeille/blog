@@ -12,4 +12,4 @@ Je note ici tout ce que je récolte durant cette année afin de pouvoir comparer
 
 |Légume/Fruit   	            |Poids   	|
 |-------------------------------|-----------|
-| 1x salade verte pommée 	    |    	    |
+| 1x salade verte pommée 	    |           |
