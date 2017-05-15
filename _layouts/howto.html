@@ -112,7 +112,7 @@
       <div class="col s12 m8 l9 xl10">
          <ul class="grid">
             {% for howto in site.howtos | where:"lang", "fr" %}
-            <li ng-data="{{ howto  | jsonify }}">
+            <li ng-data="{{ howto  | jsonify | xml_escape }}">
                <div data-mh="articles"
                     class="card card-medium hoverable card-article">
                   <div data-mh="thumbs" class="card-image">
