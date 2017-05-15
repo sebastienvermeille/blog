@@ -3,6 +3,7 @@ layout: post
 title: Hello World - V3 de mon blog
 lang: fr
 ref: hello-world
+cover: ../media/blog/cover/helloworld.png
 ---
 
 Après 5 ans sur Wordpress, je déplace mon blog vers un système de blogging statique. 
