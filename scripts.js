@@ -6,7 +6,7 @@ function locationHashChanged() {
         filter = splitted[1];
 
         if(filter){
-            alert(filter);
+
             $('#howtos-container > li').each(function(){
                 var tags = $(this).attr('data-tags');
                 console.log(tags);
