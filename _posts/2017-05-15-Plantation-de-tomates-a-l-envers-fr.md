@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Test] Culture de tomates à l'envers
+title: Test de la culture de tomates à l'envers
 lang: fr
 ref: culture-de-tomates-a-l-envers
 date: 2017-05-15 00:00
