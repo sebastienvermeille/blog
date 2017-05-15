@@ -3,6 +3,7 @@ layout: post
 title: Hello World - V3 de mon blog
 lang: fr
 ref: hello-world
+date: 2017-01-29 00:00
 cover: ../media/blog/cover/helloworld.png
 ---
 

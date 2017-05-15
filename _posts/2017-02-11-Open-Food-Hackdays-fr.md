@@ -3,6 +3,7 @@ layout: post
 title: Open Food Hackdays - Un hackathon pour les gourmands !
 lang: fr
 ref: open-food-hackdays
+date: 2017-02-11 00:00
 cover: ../media/blog/cover/openfood.png
 ---
 
