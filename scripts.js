@@ -12,9 +12,13 @@ function locationHashChanged() {
                 console.log(tags);
                 if($.inArray(filter, tags)> -1){
                     // is concerned
-                    $(this).show();
+                    if($(this).is(":hidden")){
+                        $(this).show();
+                    }
                 } else{
-                    $(this).hide();
+                    if($(this).is(":visible")){
+                        $(this).hide();
+                    }
                 }
             });
         }
