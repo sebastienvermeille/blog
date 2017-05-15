@@ -12,9 +12,9 @@ function locationHashChanged() {
                 console.log(tags);
                 if($.inArray(filter, tags)> -1){
                     // is concerned
-                    $(this).style.display = 'hidden';
+                    $(this).hide();
                 } else{
-                    $(this).style.display = 'block';
+                    $(this).show();
                 }
             });
         }
