@@ -6,6 +6,7 @@ ref: culture-de-tomates-a-l-envers
 cover: ../media/blog/cover/tomatoes.png
 ---
 
+## Ma life
 Pour des raisons professionnelles j'ai été contraint de déménager en ville et j'ai rapidement ressenti un manque de verdure. (Et oui ... )
 
 Donc j'ai commencé par des tomates car j'adore les tomates ! Et la récolte a été fabuleuse. Je n'ai pas pesé mais on en a eu plusieurs kg je pense.
@@ -13,6 +14,8 @@ Par contre, les tomates ça grimpe ça grimpe et il faut les attacher à un tute
 
 Du coup j'ai cherché sur le net et j'ai trouvé un autre système de culture sans tuteur ! Pas mal hein ?
 
+
+## La culture verticale
 En fait l'idée est toute bête on plante le plant de tomate à l'envers. La nature étant bien faite le plant va se redresser et du coup plus besoin de tuteur la gravité et la nature s'occupent de tout :
 
 Donc j'ai acheté un kit pour 12$ sur aliexpress pour commencer:
