@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Test] Culture de tomates à l'envers
+title: \[Test\] Culture de tomates à l'envers
 lang: fr
 ref: culture-de-tomates-a-l-envers
 date: 2017-05-15 00:00
@@ -19,9 +19,9 @@ Du coup j'ai cherché sur le net et j'ai trouvé un autre système de culture sa
 ## La culture verticale
 En fait l'idée est toute bête on plante le plant de tomate à l'envers. La nature étant bien faite le plant va se redresser et du coup plus besoin de tuteur la gravité et la nature s'occupent de tout :
 
-Donc j'ai acheté un kit pour 12$ sur aliexpress pour commencer:
+Donc j'ai acheté un kit pour **12$** sur aliexpress pour commencer:
 
-![Aperçu](../media/blog/posts/vertical-tomatoes-aliexpress.png "Aperçu")
+![aliexpress](../media/blog/posts/vertical-tomatoes-aliexpress.png "Aperçu")
 
 Il y a de nombreux vendeurs faites une recherche avec : "**Upside Down tomato**".
 
@@ -31,7 +31,7 @@ Le top la dedans c'est que les tomates sont toujours hydratées car l'eau qui te
 
 En ce qui me concerne, le plant de tomates à bien pris et nous avons la chance d'avoir déjà des fleurs :
 
-![Aperçu](../media/blog/posts/vertical-tomatoes.png "Aperçu")
+![my-tomatoes](../media/blog/posts/vertical-tomatoes.png "Aperçu")
 Bienne, 15 main 2017
 
 On verra ce que ça donne mais ça s'annonce plutôt bien !
