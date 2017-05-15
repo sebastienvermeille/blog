@@ -19,7 +19,7 @@ Du coup j'ai cherché sur le net et j'ai trouvé un autre système de culture sa
 ## La culture verticale
 En fait l'idée est toute bête on plante le plant de tomate à l'envers. La nature étant bien faite le plant va se redresser et du coup plus besoin de tuteur la gravité et la nature s'occupent de tout :
 
-Donc j'ai acheté un kit pour **12$** sur aliexpress pour commencer:
+Donc j'ai acheté un kit pour **12$** sur [aliexpress](https://fr.aliexpress.com/) pour commencer:
 
 ![aliexpress](../media/blog/posts/vertical-tomatoes-aliexpress.png "Aperçu")
 
