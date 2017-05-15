@@ -113,7 +113,8 @@
       <div class="col s12 m8 l9 xl10">
          <ul class="grid" id="howtos-container">
             {% for howto in site.howtos | where:"lang", "fr" %}
-            <li class="{% for tag in howto.tags %} filter-{{ tag }}{% endfor %}" data-tags="{{ howto.tags | jsonify | xml_escape }}">
+            <li class="{% for tag in howto.tags %}filter-{{ tag }} {% endfor %}"
+                data-tags="{{ howto.tags | jsonify | xml_escape }}">
                <div data-mh="articles"
                     class="card card-medium hoverable card-article">
                   <div data-mh="thumbs" class="card-image">
