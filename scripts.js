@@ -9,7 +9,7 @@ function locationHashChanged() {
             alert(filter);
             $('#howtos-container > li').each(function(){
                 var tags = $(this).attr('data-tags');
-                alert(tags);
+                console.log(tags);
                 if($.inArray(filter, tags)> -1){
                     // is concerned
                     $(this).style.display = 'hidden';
