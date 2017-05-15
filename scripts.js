@@ -8,7 +8,7 @@ function locationHashChanged() {
         if(filter){
 
             $('#howtos-container > li').each(function(){
-                var tags = $(this).attr('data-tags');
+                var tags = JSON.parse($(this).attr('data-tags'));
                 console.log(tags);
                 if($.inArray(filter, tags)> -1){
                     // is concerned
