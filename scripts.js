@@ -17,7 +17,7 @@ function locationHashChanged() {
                     }
                 } else{
                     if($(this).is(":visible")){
-                        $(this).hide();
+                        $(this).fadeOut( "slow" );
                     }
                 }
             });
