@@ -19,6 +19,7 @@
 
    <!-- Compiled and minified JavaScript -->
    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script type="text/javascript" src="assets/js/mixitup.min.js"></script>
    <script type="text/javascript" src="scripts.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
@@ -101,7 +102,7 @@
                   {% endif %}
                {% endfor %}
 
-               <a href="/howto#filter={{ currentTag }}"class="collection-item">
+               <a href="/howto#filter={{ currentTag }}"class="collection-item" data-filter=".filter-{{ currentTag }}">
                   {{ currentTag }}<span class="badge">{{ counter }}</span>
                </a>
             {% endfor %}
@@ -112,7 +113,7 @@
       <div class="col s12 m8 l9 xl10">
          <ul class="grid" id="howtos-container">
             {% for howto in site.howtos | where:"lang", "fr" %}
-            <li data-tags="{{ howto.tags | jsonify | xml_escape }}">
+            <li class="{% for tag in howto.tags %} filter-{{ tag }}{% endfor %}" data-tags="{{ howto.tags | jsonify | xml_escape }}">
                <div data-mh="articles"
                     class="card card-medium hoverable card-article">
                   <div data-mh="thumbs" class="card-image">
