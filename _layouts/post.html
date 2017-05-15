@@ -2,21 +2,22 @@
 layout: base
 permalink: /posts
 ---
+<div class="container">
+   <article class="post">
+      <h1>{{ page.title }}</h1>
 
-<article class="post">
-   <h1>{{ page.title }}</h1>
+      <div class="entry">
+         {{ content }}
+      </div>
 
-   <div class="entry">
-      {{ content }}
-   </div>
+      <div class="date">
+         {% if page.lang == "en" %}
+         Written on {{ page.date }}
+         {% else %}
+         Publié le {{ page.date }}
+         {% endif %}
+      </div>
 
-   <div class="date">
-      {% if page.lang == "en" %}
-      Written on {{ page.date }}
-      {% else %}
-      Publié le {{ page.date }}
-      {% endif %}
-   </div>
-
-   {% include disqus.html %}
-</article>
+      {% include disqus.html %}
+   </article>
+</div>
