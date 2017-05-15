@@ -32,6 +32,6 @@ Le top la dedans c'est que les tomates sont toujours hydratées car l'eau qui te
 En ce qui me concerne, le plant de tomates à bien pris et nous avons la chance d'avoir déjà des fleurs :
 
 ![Aperçu](../media/blog/posts/vertical-tomatoes.png "Aperçu")
-_(15.05.2017)_
+Bienne, 15 main 2017
 
 On verra ce que ça donne mais ça s'annonce plutôt bien !
