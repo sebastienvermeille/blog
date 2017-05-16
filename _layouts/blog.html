@@ -57,12 +57,12 @@
 
 <!-- content:start -->
 <main class="row">
-   <div class="col s12 m6">
+   <div class="col s12">
       {{ content }}
 
       {% for post in site.posts | where:"lang", "fr" %}
 
-      <div class="card horizontal">
+      <div class="card horizontal col s12 m6">
          <div class="card-image">
             <img src="{{ site.baseurl }}{{ post.cover }}">
          </div>
