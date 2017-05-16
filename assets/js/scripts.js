@@ -40,12 +40,6 @@ $(function() {
     $('h2').each(function(){
         var title = $(this).text();
         var id = $(this).attr('id');
-
-        var anchor = $('<a name="'+id+'" class="anchor"></a>');
-        $(this).append(anchor);
-
-        console.log(title);
-
         var section = $('<a href="#'+id+'" class="collection-item">'+title+'</a>');
         $('div#summary').append(section);
     });
