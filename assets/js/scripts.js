@@ -32,6 +32,11 @@ window.addEventListener("hashchange", locationHashChanged, false);
 
 
 $(function() {
+
+    if ( $( "#howtos-container" ).length ) {
+        var mixer = mixitup('#howtos-container');
+    }
+
     $('h2').each(function(){
         var title = $(this).text();
         console.log(title);
@@ -41,4 +46,3 @@ $(function() {
     })
 });
 
-var mixer = mixitup('#howtos-container');
