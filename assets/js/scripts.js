@@ -89,3 +89,10 @@ $(document).bind('scroll',function(e){
         }
     });
 });
+
+// Detect adblock
+if(document.getElementById('OIopfjhimqxV')){
+    alert('Blocking Ads: No');
+} else {
+    alert('Blocking Ads: Yes');
+}
