@@ -48,10 +48,6 @@ $(function() {
         var mixer = mixitup('#howtos-container');
     }
 
-    if ( $("h2").length ) {
-        $('div#summary').show();
-    }
-
     $('h2').each(function(){
         var title = $(this).text();
         var id = $(this).attr('id');
