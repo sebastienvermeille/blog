@@ -69,6 +69,8 @@ permalink: /:title/
 collections:
   howtos:
     output: true
+  projects:
+    output: true
 
 defaults:
   -
@@ -88,7 +90,7 @@ defaults:
       path: "_projects"
       type: "projects"
     values:
-      permalink: "projects/:title"
+      permalink: "project/:title"
 
 # The release of Jekyll Now that you're using
 version: v1.2.0
