@@ -59,22 +59,7 @@
 <main class="row">
    <div class="col s12 m12 l12 xl12">
       {{ content }}
-      <div class="col s12 m4 l3 xl2">
-         <div class="collection with-header">
-            <div class="collection-header">
-               <h8>Thèmes</h8>
-            </div>
-            <a href="/" class="collection-item">Tous les thèmes</a><a href="/content/Databases/"
-                                                                      class="collection-item">Databases<span
-                 class="badge">1</span></a><a href="/content/Docker/" class="collection-item">Docker<span
-                 class="badge">1</span></a><a href="/content/Games/" class="collection-item">Games<span
-                 class="badge">1</span></a><a href="/content/Git/" class="collection-item">Git<span
-                 class="badge">1</span></a><a
-                 href="/content/Linux/" class="collection-item">Linux<span class="badge">1</span></a><a
-                 href="/content/PHP/" class="collection-item">PHP<span class="badge">2</span></a>
-         </div>
-      </div>
-      <div class="col s12 m8 l9 xl10">
+      <div class="col s12">
 
          <ul id="hexGrid">
             {% for project in site.projects %}
@@ -92,54 +77,6 @@
       </div>
    </div>
 </main>
-<!-- content:end -->
-
-<!--<div class="wrapper-masthead">-->
-<!--<div class="container">-->
-<!--<header class="masthead clearfix">-->
-<!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}"/></a>-->
-
-<!--<div class="site-info">-->
-<!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
-<!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
-<!--</div>-->
-
-<!--<nav>-->
-<!--<a href="{{ site.baseurl }}/">{{ i18n.blog[currentLanguage] }}</a>-->
-<!--<a href="{{ site.baseurl }}/about">{{ i18n.about[currentLanguage] }}</a>-->
-<!--</nav>-->
-
-<!--<ul>-->
-<!--{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}-->
-<!--{% for post in posts %}-->
-<!--<li>-->
-<!--<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>-->
-<!--</li>-->
-<!--{% endfor %}-->
-
-<!--{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}-->
-<!--{% for page in pages %}-->
-<!--<li>-->
-<!--<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>-->
-<!--</li>-->
-<!--{% endfor %}-->
-<!--</ul>-->
-
-<!--</header>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--<div id="main" role="main" class="container">-->
-<!--{{ content }}-->
-<!--</div>-->
-
-<!--<div class="wrapper-footer">-->
-<!--<div class="container">-->
-<!--<footer class="footer">-->
-<!--{% include svg-icons.html %}-->
-<!--</footer>-->
-<!--</div>-->
-<!--</div>-->
 
 {% include footer.html %}
 
