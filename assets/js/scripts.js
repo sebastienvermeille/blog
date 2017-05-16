@@ -48,12 +48,15 @@ $(function() {
         var mixer = mixitup('#howtos-container');
     }
 
+    if ( $("h2").length ) {
+        $('div#summary').show();
+    }
+
     $('h2').each(function(){
         var title = $(this).text();
         var id = $(this).attr('id');
         var section = $('<a href="#'+id+'" class="collection-item">'+title+'</a>');
         $('div#summary').append(section);
-        $('div#summary').show();
     });
 });
 
