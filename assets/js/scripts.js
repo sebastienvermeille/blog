@@ -39,7 +39,7 @@ $(function() {
 
     $('h2').each(function(){
         var title = $(this).text();
-        var id = $(this).id;
+        var id = $(this).attr('id');
 
         var anchor = $('<a name="'+id+'"></a>');
         $(this).append(anchor);
