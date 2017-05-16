@@ -43,6 +43,6 @@ $(function() {
 
         var section = $('<a href="#'+title+'">'+title+'</a>');
         $('div#summary').append(section);
-    })
+    });
 });
 
