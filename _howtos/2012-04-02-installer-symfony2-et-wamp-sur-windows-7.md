@@ -72,13 +72,13 @@ Si cela ne fonctionne pas vérifiez que vous avez renseigné le bon chemin pour 
 
 Faites clic-gauche sur l’icône de Wamp dans la barre des tâches > Apache > Apache Modules > sélectionnez **Rewrite Module**
 
-##Pour les modules php
+## Pour les modules php
 
 Faites clic-gauche sur l’icône de Wamp > PHP > PHP Extensions > cochez **php_intl, php_xmlrpc, php_pdo_mysql, php_sqlite3, php_mbstring**
 
 Symfony2 recommande également l’utilisation du module **php_apc** pour accélérer le rendu des pages mais **je vous le déconseille pour l’environnement de développement** car il pose quelques problèmes avec phpmyadmin et je ne traiterai pas de la cohabitation entre apc et pma ici. (Peut-être dans un article future)
 
-##Test de Symfony2
+## Test de Symfony2
 
 Pour vérifier que tout est en ordre, je vous invite à télécharger le framework Symfony2 sur son [site officiel]
 (http://www.symfony.com/).
