@@ -117,13 +117,15 @@
                <div data-mh="articles"
                     class="card card-medium hoverable card-article">
                   <div data-mh="thumbs" class="card-image">
-                     <img src="{{ howto.cover }}" class="responsive-img unselectable">
+                     <a href="{{ site.baseurl }}{{ howto.url }}">
+                        <img src="{{ howto.cover }}" class="responsive-img unselectable">
+                     </a>
                   </div>
                   <div class="card-content" style="flex: 1 0 auto;">
                      <p data-mh="articles-title" class="unselectable">{{ howto.title }}</p>
                   </div>
-                  <div class="card-action"><a
-                          href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
+                  <div class="card-action">
+                     <a href="{{ site.baseurl }}{{ howto.url }}">Lire</a>
                      <div class="right">
                         {% for tag in howto.tags limit:2 %}
                         <span data-badge-caption="{{ tag }}" class="new badge"></span>
