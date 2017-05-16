@@ -35,5 +35,8 @@ $(function() {
     $('h2').each(function(){
         var title = $(this).text();
         console.log(title);
+
+        var section = $('<a href="#'+title+'">'+title+'</a>');
+        $('div#summary').append(section);
     })
 });
