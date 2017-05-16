@@ -13,13 +13,13 @@ tags: ['mariadb', 'mysql']
 
 Voici une méthode simple qui permet de désactiver le controle des clés étrangères. (Utile si on souhaite supprimer une table par exemple)
 
-~~~
+```sql
 SET foreign_key_checks = 0;
-~~~
+```
 
 
 
 Pour réactiver le contrôle des clés étrangères :
-~~~
+```sql
 SET foreign_key_checks = 1;
-~~~
+```
