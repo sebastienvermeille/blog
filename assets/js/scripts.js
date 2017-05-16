@@ -27,8 +27,15 @@ function locationHashChanged() {
 
     if(url.indexOf("/howto/") > -1 && location.hash.indexOf("#") > -1) {
         var activeSection = location.hash;
-        console.log("SECTION ACTIVE" + activeSection);
-        $('div#summary a[href^='+activeSection+']').addClass("active");
+
+        $('div#summary a').each(function(){
+            var href = $(this).attr('href');
+            if(href == activeSection && !$(this).hasClass('active')) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass('active');
+            }
+        });
     }
 }
 
