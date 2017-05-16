@@ -3,27 +3,29 @@ layout: base
 permalink: /posts
 ---
 <div class="container">
-   <article class="post z-depth-3">
-      <h1>{{ page.title }}</h1>
+    <div class="z-depth-3" style="padding:16px; background-color:white;">
+        <article class="post">
+            <h1>{{ page.title }}</h1>
 
-      <div class="entry">
-         {{ content }}
-      </div>
+            <div class="entry">
+                {{ content }}
+            </div>
 
-      <div class="date">
-         {% if page.lang == "en" %}
-         Written on {{ page.date }}
-         {% else %}
-         Publié le {{ page.date }}
-         {% endif %}
-      </div>
-      {% if page.comments == true %}
-      <div class="row">
-         <h5>Commentaires</h5>
-         <div class="col s12">
-            {% include disqus.html %}
-         </div>
-      </div>
-      {% endif %}
-   </article>
+            <div class="date">
+                {% if page.lang == "en" %}
+                Written on {{ page.date }}
+                {% else %}
+                Publié le {{ page.date }}
+                {% endif %}
+            </div>
+            {% if page.comments == true %}
+            <div class="row">
+                <h5>Commentaires</h5>
+                <div class="col s12">
+                    {% include disqus.html %}
+                </div>
+            </div>
+            {% endif %}
+        </article>
+    </div>
 </div>
