@@ -116,18 +116,17 @@ h2 {
    font-size: 2.28rem;
    line-height: 110%;
    margin: 1.14rem 0 .912rem 0;
-
-      padding-top: 64px;
-      position: relative;
-      top: -64px;
-      margin-bottom: -64px;
-      z-index: -99999px
-   
-
 }
 
 h3 {
    font-size: 1.68rem;
    line-height: 110%;
    margin: 1.14rem 0 .912rem 0;
+}
+
+a.anchor {
+   display: block;
+   position: relative;
+   top: -250px;
+   visibility: hidden;
 }

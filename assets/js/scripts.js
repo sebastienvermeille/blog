@@ -41,7 +41,7 @@ $(function() {
         var title = $(this).text();
         var id = $(this).attr('id');
 
-        var anchor = $('<a name="'+id+'"></a>');
+        var anchor = $('<a name="'+id+'" class="anchor"></a>');
         $(this).append(anchor);
 
         console.log(title);
