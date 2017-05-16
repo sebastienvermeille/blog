@@ -1,6 +1,5 @@
 function locationHashChanged() {
     if (location.hash.indexOf("#filter=") > -1) {
-
         var filter = location.hash;
         var splitted = filter.split('=');
         filter = splitted[1];
@@ -22,7 +21,16 @@ function locationHashChanged() {
             //     }
             // });
         }
+    }
 
+    var url = window.location.href;
+
+    if(url.indexOf("/howto/") > -1 && location.hash.indexOf("#") > -1) {
+        var activeSection = location.hash;
+        var splitted = activeSection.split('=');
+        activeSection = splitted[1];
+
+        $('div#summary a#'+activeSection).addClass("active");
     }
 }
 
