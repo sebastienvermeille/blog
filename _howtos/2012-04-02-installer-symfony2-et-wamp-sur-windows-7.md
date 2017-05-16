@@ -11,8 +11,8 @@ github: todo
 tags: ['php', 'symfony']
 ---
 
-Installation de WAMP
----------------------
+## Installation de WAMP
+
 ![Logo WampServer](../media/howto/wamp-printscreen.png "Logo WampServer")
 
 Pour commencer, il faut télécharger l’installeur wamp disponible gratuitement sur son [site officiel](http://www.wampserver.com/) dans la section 
@@ -22,8 +22,7 @@ Pour commencer, il faut télécharger l’installeur wamp disponible gratuitemen
 
 Dès lors que le téléchargement est terminé vous pouvez procéder à son installation. L’installation est très simple je ne m’attarderai pas dessus afin de rester centré uniquement sur l’essentiel dans ce tutoriel.
 
-Configuration de la variable d'environnement **PATH** pour PHP
------------------------------------------------------------------
+## Configuration de la variable d'environnement **PATH** pour PHP
 
 Pour savoir si php est déjà enregistré dans le path de votre système lancez l’invité de commande (cmd) et tapez :
 
@@ -39,8 +38,8 @@ Si vous n’obtenez pas un message similaire à celui de l'image ci-dessous, ce 
 
 Donc si vous n'obtenez pas ce message, rien de grave voici comment procéder :
 
-Modification de la variable d'environnement PATH
-------------------------------------------------
+## Modification de la variable d'environnement PATH
+
 
 Rendez-vous dans **Panneau de configuration > Système > Paramètres système avancés** :
 
@@ -67,21 +66,20 @@ Vous devriez obtenir cette fois-ci un résultat proche de celui de l’image con
 
 Si cela ne fonctionne pas vérifiez que vous avez renseigné le bon chemin pour votre exécutable php.
 
-Déploiement des différents modules Apache et PHP recommandés par la doc de Symfony2
-------------------------------------------------------------------------------------
+## Déploiement des différents modules Apache et PHP recommandés par la doc de Symfony2
 
-Pour apache
-------------
+## Pour apache
+
 Faites clic-gauche sur l’icône de Wamp dans la barre des tâches > Apache > Apache Modules > sélectionnez **Rewrite Module**
 
-Pour les modules php
----------------------
+##Pour les modules php
+
 Faites clic-gauche sur l’icône de Wamp > PHP > PHP Extensions > cochez **php_intl, php_xmlrpc, php_pdo_mysql, php_sqlite3, php_mbstring**
 
 Symfony2 recommande également l’utilisation du module **php_apc** pour accélérer le rendu des pages mais **je vous le déconseille pour l’environnement de développement** car il pose quelques problèmes avec phpmyadmin et je ne traiterai pas de la cohabitation entre apc et pma ici. (Peut-être dans un article future)
 
-Test de Symfony2
------------------
+##Test de Symfony2
+
 Pour vérifier que tout est en ordre, je vous invite à télécharger le framework Symfony2 sur son [site officiel]
 (http://www.symfony.com/).
 
