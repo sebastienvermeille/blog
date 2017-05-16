@@ -26,7 +26,7 @@ function locationHashChanged() {
     var url = window.location.href;
 
     if(url.indexOf("/howto/") > -1 && location.hash.indexOf("#") > -1) {
-        var activeSection = location.hash.substr(1);
+        var activeSection = location.hash;
         console.log("SECTION ACTIVE" + activeSection);
         $('div#summary a[href^='+activeSection+']').addClass("active");
     }
