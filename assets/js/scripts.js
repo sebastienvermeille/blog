@@ -35,6 +35,16 @@ $(function() {
         var mixer = mixitup('#howtos-container');
     }
 
+    $('h2').each(function(){
+        var title = $(this).text();
+        var id = $(this).attr('id');
+        var section = $('<a href="#'+id+'" class="collection-item">'+title+'</a>');
+        $('div#summary').append(section);
+    });
+});
+
+// Smooth scroll
+$(document).ready(function(){
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();
 
@@ -47,12 +57,4 @@ $(function() {
             window.location.hash = target;
         });
     });
-
-    $('h2').each(function(){
-        var title = $(this).text();
-        var id = $(this).attr('id');
-        var section = $('<a href="#'+id+'" class="collection-item">'+title+'</a>');
-        $('div#summary').append(section);
-    });
 });
-
