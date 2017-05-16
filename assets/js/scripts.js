@@ -53,6 +53,7 @@ $(function() {
         var id = $(this).attr('id');
         var section = $('<a href="#'+id+'" class="collection-item">'+title+'</a>');
         $('div#summary').append(section);
+        $('div#summary').show();
     });
 });
 
