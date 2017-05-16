@@ -29,7 +29,7 @@ function locationHashChanged() {
 window.addEventListener("hashchange", locationHashChanged, false);
 
 // HOWTO Page
-var mixer = mixitup('#howtos-container');
+
 
 $(function() {
     $('h2').each(function(){
@@ -40,3 +40,5 @@ $(function() {
         $('div#summary').append(section);
     })
 });
+
+var mixer = mixitup('#howtos-container');
