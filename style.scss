@@ -23,14 +23,15 @@ $desktop-width: 1024px;
 }
 
 .site-avatar {
-
    float:left;
+   margin-left: 10px;
    margin-right:20px;
 
    img {
       height: 80%;
       vertical-align: middle;
       border-radius: 5px;
+      margin-bottom: 2.5px;
    }
 }
 
