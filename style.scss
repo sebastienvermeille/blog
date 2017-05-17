@@ -95,9 +95,12 @@ body {
    background-color:#eeeeee;
 }
 
-div.card {
-   background-image: url('assets/images/white-bg.jpg');
+ul#howtos-container{
+   div.card {
+      background-image: url('assets/images/white-bg.jpg');
+   }
 }
+
 
 //@import "materialize/materialize";
 @import "svg-icons";
