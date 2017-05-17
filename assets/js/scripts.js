@@ -91,3 +91,25 @@ if( window.canRunAds === undefined ){
     // adblocker detected, show fallback
     console.info("ADBLOCK DETECTED :)");
 }
+
+//----------------------------------------------------------
+// Quotes
+//----------------------------------------------------------
+// Returns a random number betweein min (incl) and max (excl)
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
+$(document).ready(function(){
+
+    $.getJSON( "/quotes.json", function( data ) {
+
+        var index = getRandomArbitrary(0, data.length);
+        $('footer > blockquote').text('');
+        $('footer > blockquote').append(data[index].quote, '<span class="typed-cursor"></span>', '<p class="white-text right author">'+data[index].author+'</p>');
+
+    });
+
+
+});
+
