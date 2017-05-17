@@ -86,13 +86,15 @@ $(document).bind('scroll',function(e){
     });
 });
 
+//----------------------------------------------------------
 // Detect adblock
-if( window.canRunAds === undefined ){
-    // adblocker detected, show fallback
-    console.info("ADBLOCK DETECTED :)");
+//----------------------------------------------------------
+$(document).ready(function() {
+    if (window.canRunAds === undefined) {
+        // adblocker detected, show fallback
+        console.info("ADBLOCK DETECTED :)");
         $('#adblock').show();
-
-
+    }
 }
 
 //----------------------------------------------------------
@@ -108,11 +110,8 @@ function getRandomIntInclusive(min, max) {
 $(document).ready(function(){
 
     $.getJSON( "../../quotes.json", function( data ) {
-        console.log(data);
         var index = getRandomIntInclusive(0, data.length-1);
-        console.log(index);
         var quote = data[index];
-        console.log(quote);
         $('#quote-container').empty().append(
             quote.quote,//     \\
                         //     (o>
