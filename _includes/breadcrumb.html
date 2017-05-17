@@ -4,15 +4,15 @@
     {% if include.path contains "posts" %}
     <a href="/blog" class="breadcrumb">Blog</a>
     {% endif %}
-    {% if include.title == 'blog.md' %}
+    {% if include.path == 'blog.md' %}
     <a href="#" class="breadcrumb active">Blog</a>
     {% endif %}
-    {% if include.path contains "howto" || include.title == 'howtos.md' %}
+    {% if include.path contains "howto" %}
     <a href="/howto" class="breadcrumb">Howto</a>
     {% endif %}
-    {% if include.title == 'howtos.md' %}
+    {% if include.path == 'howtos.md' %}
     <a href="#" class="breadcrumb">Howto</a>
     {% endif %}
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
-    {{ include.path }} {{ include.title }}
+    p={{ include.path }} t={{ include.title }}
 </div>
