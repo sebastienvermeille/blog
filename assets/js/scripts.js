@@ -110,8 +110,8 @@ $(document).ready(function(){
         console.log(index);
         var quote = data[index];
         console.log(quote);
-        $('footer > blockquote').text('');
-        $('footer > blockquote').append(
+        $('#quote-container').text('');
+        $('#quote-container').append(
             quote.quote,//     \\
                         //     (o>
                         //  \\_//)
