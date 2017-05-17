@@ -95,7 +95,7 @@ $(document).ready(function() {
         console.info("ADBLOCK DETECTED :)");
         $('#adblock').show();
     }
-}
+});
 
 //----------------------------------------------------------
 // Quotes
