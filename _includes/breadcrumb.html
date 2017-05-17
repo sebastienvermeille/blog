@@ -4,7 +4,7 @@
     {% if include.path contains "posts" || include.title == 'blog.md' %}
     <a href="/blog" class="breadcrumb">Blog</a>
     {% endif %}
-    {% if include.path contains "posts" || include.title == 'howtos.md' %}
+    {% if include.path contains "howto" || include.title == 'howtos.md' %}
     <a href="/howto" class="breadcrumb">Howto</a>
     {% endif %}
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
