@@ -1,6 +1,6 @@
 <div class="breadcrumb-container">
 
-    <a href="/" class="breadcrumb">Home</a>
+    <a href="/" class="breadcrumb" aria-label="p={{ include.path }} t={{ include.title }}">Home</a>
 
     {% comment %}
     ------------------------------------BLOG PART---------------------------------
@@ -18,9 +18,28 @@
     {% endcomment %}
 
     {% if include.path == 'howtos.md' %}
-    <a href="#" class="breadcrumb" aria-label="p={{ include.path }} t={{ include.title }}">Howto</a>
+    <a href="#" class="breadcrumb">Howto</a>
     {% elsif include.path contains "howto" %}
     <a href="/howto" class="breadcrumb">Howto</a>
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
+    {% endif %}
+
+    {% comment %}
+    ------------------------------------PROJECTS PART---------------------------------
+    {% endcomment %}
+
+    {% if include.path == 'projects.md' %}
+    <a href="#" class="breadcrumb">Projects</a>
+    {% elsif include.path contains "project" %}
+    <a href="/projects" class="breadcrumb">Projects</a>
+    <a href="#" class="breadcrumb active">{{ include.title }}</a>
+    {% endif %}
+
+    {% comment %}
+    ------------------------------------ABOUT PART---------------------------------
+    {% endcomment %}
+
+    {% if include.path == 'about.md' %}
+    <a href="#" class="breadcrumb">About</a>
     {% endif %}
 </div>
