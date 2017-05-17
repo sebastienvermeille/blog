@@ -211,6 +211,7 @@ footer {
    -moz-animation: blink 0.9s infinite;
    animation: blink 0.9s infinite;
    border: 5px solid white;
+   font-size: 0.6em;
 }
 @keyframes blink{
    0% { opacity:1; }
