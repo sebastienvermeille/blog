@@ -105,8 +105,18 @@ $(document).ready(function(){
     $.getJSON( "../../quotes.json", function( data ) {
         console.log(data);
         var index = getRandomArbitrary(0, data.length);
+        console.log(index);
+        var quote = data[index];
+        console.log(quote);
         $('footer > blockquote').text('');
-        $('footer > blockquote').append(data[index].quote, '<span class="typed-cursor"></span>', '<p class="white-text right author">'+data[index].author+'</p>');
+        $('footer > blockquote').append(
+            quote.quote,//     \\
+                        //     (o>
+                        //  \\_//)
+                        //   \_/_)
+                        //    _|_
+            '<span class="typed-cursor"></span>',
+            '<p class="white-text right author">'+quote.author+'</p>');
 
     });
 
