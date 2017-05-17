@@ -110,15 +110,14 @@ $(document).ready(function(){
         console.log(index);
         var quote = data[index];
         console.log(quote);
-        $('#quote-container').text('');
-        $('#quote-container').append(
+        $('#quote-container').empty().append(
             quote.quote,//     \\
                         //     (o>
                         //  \\_//)
                         //   \_/_)
                         //    _|_
             '<span class="typed-cursor"></span>',
-            '<p class="white-text right author">'+quote.author+'</p>');
+            '<p class="white-text right quote-author">'+quote.author+'</p>');
 
     });
 
