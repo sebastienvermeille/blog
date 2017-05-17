@@ -1,138 +1,92 @@
 <!DOCTYPE html>
 <html>
 <head>
-   {% assign currentLanguage = 'en' %}
-   {% if page.lang[0] %}
-   {% assign currentLanguage = page.lang[0] %}
-   {% endif %}
+    {% assign currentLanguage = 'en' %}
+    {% if page.lang[0] %}
+    {% assign currentLanguage = page.lang[0] %}
+    {% endif %}
 
-   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description[currentLanguage]
-      }}</title>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description[currentLanguage]
+        }}</title>
 
-   {% include meta.html %}
+    {% include meta.html %}
 
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
-   <!--Import Google Icon Font-->
-   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-   <!-- Compiled and minified JavaScript -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
-   <!--Let browser know website is optimized for mobile-->
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-   <!--&lt;!&ndash;[if lt IE 9]>-->
-   <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
-   <!--<![endif]&ndash;&gt;-->
+    <!--&lt;!&ndash;[if lt IE 9]>-->
+    <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+    <!--<![endif]&ndash;&gt;-->
 
-   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
-   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description[currentLanguage] }}"
-         href="{{ site.baseurl }}/feed.xml"/>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description[currentLanguage] }}"
+          href="{{ site.baseurl }}/feed.xml"/>
 
 </head>
 
 <body>
 <!-- navbar:start -->
 <header class="navbar-fixed">
-   <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container">
-         <a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo site-avatar">
-            <img src="{{ site.avatar }}"/>
+    <nav class="light-blue lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo site-avatar">
+                <img src="{{ site.avatar }}"/>
 
-            <!--<div class="site-info">-->
-            <!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
-            <!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
-            <!--</div>-->
+                <!--<div class="site-info">-->
+                <!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
+                <!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
+                <!--</div>-->
 
-         </a>
-         {% include navbar-links.html %}
-         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-   </nav>
+            </a>
+            {% include navbar-links.html %}
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
 </header>
 <!-- navbar:end -->
 
 <!-- content:start -->
 <main class="row">
-   <div class="col s12">
-      {{ content }}
+    <div class="container">
+        <div class="col s12">
+            {{ content }}
 
-      {% for post in site.posts | where:"lang", "fr" %}
+            {% for post in site.posts | where:"lang", "fr" %}
 
-      <div class="card horizontal col s12 m6">
-         <div class="card-image">
-            <img src="{{ site.baseurl }}{{ post.cover }}">
-         </div>
-         <div class="card-stacked">
-            <div class="card-content">
-               <a class=card-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-               <p> {{ post.excerpt }}</p>
+            <div class="card horizontal col s12">
+                <div class="card-image">
+                    <img src="{{ site.baseurl }}{{ post.cover }}">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <a class=card-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        <p> {{ post.excerpt }}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+                    </div>
+                </div>
             </div>
-            <div class="card-action">
-               <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
-            </div>
-         </div>
-      </div>
-      {% endfor %}
+            {% endfor %}
 
-   </div>
+        </div>
+    </div>
 </main>
-<!-- content:end -->
-
-<!--<div class="wrapper-masthead">-->
-<!--<div class="container">-->
-<!--<header class="masthead clearfix">-->
-<!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}"/></a>-->
-
-<!--<div class="site-info">-->
-<!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
-<!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
-<!--</div>-->
-
-<!--<nav>-->
-<!--<a href="{{ site.baseurl }}/">{{ i18n.blog[currentLanguage] }}</a>-->
-<!--<a href="{{ site.baseurl }}/about">{{ i18n.about[currentLanguage] }}</a>-->
-<!--</nav>-->
-
-<!--<ul>-->
-<!--{% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}-->
-<!--{% for post in posts %}-->
-<!--<li>-->
-<!--<a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>-->
-<!--</li>-->
-<!--{% endfor %}-->
-
-<!--{% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}-->
-<!--{% for page in pages %}-->
-<!--<li>-->
-<!--<a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>-->
-<!--</li>-->
-<!--{% endfor %}-->
-<!--</ul>-->
-
-<!--</header>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--<div id="main" role="main" class="container">-->
-<!--{{ content }}-->
-<!--</div>-->
-
-<!--<div class="wrapper-footer">-->
-<!--<div class="container">-->
-<!--<footer class="footer">-->
-<!--{% include svg-icons.html %}-->
-<!--</footer>-->
-<!--</div>-->
-<!--</div>-->
 
 {% include footer.html %}
 
 {% include analytics.html %}
-<script type="text/javascript" src="{{ site.url }}/showads.js" ></script>
+<script type="text/javascript" src="{{ site.url }}/showads.js"></script>
 <script type="text/javascript" src="{{ site.url }}/assets/js/scripts.js"></script>
 </body>
 </html>
