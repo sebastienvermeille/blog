@@ -90,10 +90,8 @@ $(document).bind('scroll',function(e){
 if( window.canRunAds === undefined ){
     // adblocker detected, show fallback
     console.info("ADBLOCK DETECTED :)");
+        $('#adblock').show();
 
-    if($('#adblock').length){
-        $('#adblock').style.display = 'block';
-    }
 
 }
 
