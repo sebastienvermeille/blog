@@ -1,15 +1,25 @@
 <div class="breadcrumb-container">
 
     <a href="/" class="breadcrumb">Home</a>
+
+    {% comment %}
+    ------------------------------------BLOG PART---------------------------------
+    {% endcomment %}
+
     {% if include.path == 'blog.md' %}
     <a href="#" class="breadcrumb active">Blog</a>
-    {% else if include.path contains "posts" %}
+    {% elsif include.path contains "posts" %}
     <a href="/blog" class="breadcrumb">Blog</a>
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
     {% endif %}
+
+    {% comment %}
+    ------------------------------------HOWTO PART---------------------------------
+    {% endcomment %}
+
     {% if include.path == 'howtos.md' %}
     <a href="#" class="breadcrumb">Howto</a>
-    {% else if include.path contains "howto" %}
+    {% elsif include.path contains "howto" %}
     <a href="/howto" class="breadcrumb">Howto</a>
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
     {% endif %}
