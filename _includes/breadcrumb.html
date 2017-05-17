@@ -1,5 +1,5 @@
 <div class="breadcrumb-container">
-    {{ include.path }} {{ include.title }}
+
     <a href="/" class="breadcrumb">Home</a>
     {% if include.path contains "posts" || include.title == 'blog.md' %}
     <a href="/blog" class="breadcrumb">Blog</a>
@@ -8,4 +8,5 @@
     <a href="/howto" class="breadcrumb">Howto</a>
     {% endif %}
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
+    {{ include.path }} {{ include.title }}
 </div>
