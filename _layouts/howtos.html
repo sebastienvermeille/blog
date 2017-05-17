@@ -39,7 +39,7 @@
 <header class="navbar-fixed">
    <nav class="light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container">
-         <a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo site-avatar">
+         <a id="logo-container" href="{{ site.baseurl }}/" class="site-avatar">
             <img src="{{ site.avatar }}"/>
 
             <!--<div class="site-info">-->
@@ -48,6 +48,7 @@
             <!--</div>-->
 
          </a>
+         {% include breadcrumb.html path=page.path title=page.title %}
          {% include navbar-links.html %}
          <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
