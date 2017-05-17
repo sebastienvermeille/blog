@@ -18,10 +18,9 @@
     {% endcomment %}
 
     {% if include.path == 'howtos.md' %}
-    <a href="#" class="breadcrumb">Howto</a>
+    <a href="#" class="breadcrumb" aria-label="p={{ include.path }} t={{ include.title }}">Howto</a>
     {% elsif include.path contains "howto" %}
     <a href="/howto" class="breadcrumb">Howto</a>
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
     {% endif %}
-    p={{ include.path }} t={{ include.title }}
 </div>
