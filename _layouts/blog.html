@@ -64,9 +64,7 @@
             {% for post in site.posts | where:"lang", "fr" %}
 
             <div class="card horizontal col s12">
-                <div class="card-image">
-                    <img src="{{ site.baseurl }}{{ post.cover }}">
-                </div>
+                <div class="card-image" style="width: 120px; background-image:url('{{ site.baseurl }}{{ post.cover }}');"></div>
                 <div class="card-stacked">
                     <div class="card-content">
                         <a class=card-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
