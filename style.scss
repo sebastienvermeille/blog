@@ -185,3 +185,22 @@ article.post {
    display: inline-block;
    float:left;
 }
+
+footer {
+   blockquote::before {
+      color: #54370b;
+      content: open-quote;
+      font-size: 7em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.5em;
+   }
+
+   blockquote {
+      background: rgb(228, 155, 46);
+      border-left: 10px solid #ef9004;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "“" "”" "‘" "’";
+   }
+}
