@@ -90,6 +90,11 @@ $(document).bind('scroll',function(e){
 if( window.canRunAds === undefined ){
     // adblocker detected, show fallback
     console.info("ADBLOCK DETECTED :)");
+
+    if($('#adblock').length){
+        $('#adblock').style.display = 'block';
+    }
+
 }
 
 //----------------------------------------------------------
@@ -120,7 +125,5 @@ $(document).ready(function(){
             '<p class="white-text right quote-author">'+quote.author+'</p>');
 
     });
-
-
 });
 
