@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: howto
 title: "[Docker] Downgrader sa version de docker sur debian ou ubuntu"
 description: Commandes pour installer une version spécifique de docker et désinstaller l'installation actuelle.
 date: 2017-05-11 00:00

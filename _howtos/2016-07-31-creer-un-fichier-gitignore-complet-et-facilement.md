@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: howto
 title: "[Git] Créer un fichier .gitignore complet en 30 secondes avec gitignore.io"
 description: Commande pour désactiver et/ou réactiver les contraintes de clés étrangères dans une base de données MariaDB ou MySQL
 date: 2016-07-31 00:00

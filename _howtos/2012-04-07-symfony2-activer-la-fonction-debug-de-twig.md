@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: howto
 title: "[Symfony2] Activer la fonction debug de Twig"
 description: Comment activer la fonction debug sur twig
 date: 2012-04-07 00:00

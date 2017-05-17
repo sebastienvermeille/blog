@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: howto
 title: "[Linux] Comment savoir si Linux est installé en 64 ou 32 bits"
 description: Comment savoir si Linux est installé en 64 ou 32 bits
 date: 2017-06-31 00:00

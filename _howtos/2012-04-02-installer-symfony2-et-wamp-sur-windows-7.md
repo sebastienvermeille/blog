@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: howto
 title: "[Symfony2] Installation de Symfony2 et WAMP sous Windows 7"
 description: Comment installer symfony2 et wamp sur windows 7
 date: 2012-04-02 00:00
