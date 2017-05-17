@@ -1,5 +1,5 @@
 ---
-layout: howto
+layout: howtos
 title: Tutoriaux
 permalink: /howto
 ---
