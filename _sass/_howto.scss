@@ -1,19 +1,18 @@
 article.howto {
-  section.header {
 
+  div.card-panel {
 
     border-radius:3px;
-    background-color: #0076b5;
-    border: 1px solid #0076b5;
     text-align:center;
 
     h2 {
-      color:white;
       font-weight:bold;
     }
 
     img {
-      margin:auto;
+      width:128px;
+      display: block;
+      margin: 0 auto;
     }
   }
 }
