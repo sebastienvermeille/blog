@@ -241,5 +241,9 @@ footer {
 }
 
 header.navbar-fixed {
-   overflow:hidden;
+   nav {
+      div.container {
+         overflow:hidden;
+      }
+   }
 }
