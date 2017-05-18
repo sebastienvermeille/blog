@@ -1,24 +1,26 @@
 a {
-  i.svg-icon {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    font-size: 3em;
-    color:white;
 
-    &.github {
-    }
-    &.linkedin {
-    }
-    &.rss {
-    }
-    &.stackoverflow {
-    }
-    &.twitter {
+}
 
-    }
-    &.slack {
-    }
+.svg-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  font-size: 3em;
+  color:white;
+
+  &.github {
+  }
+  &.linkedin {
+  }
+  &.rss {
+  }
+  &.stackoverflow {
+  }
+  &.twitter {
+
+  }
+  &.slack {
   }
 }
 
