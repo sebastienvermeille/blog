@@ -14,11 +14,12 @@ permalink: /howto
                 <img src="{{ page.cover }}" class="circle responsive-img"/>
 
                 <p class="white-text">Publié par Sébastien Vermeille le {{ page.date }}, mis à jour le {{ page.updatedAt }} (0 lectures)</p>
-                <ul class="tags">
+                <p class="tags white-text">
+                    <i class="material-icons white-text">loyalty</i>
                     {% for tag in page.tags %}
-                    <li data-badge-caption="{{ tag }}" class="new badge"></li>
+                    <span data-badge-caption="{{ tag }}" class="new badge"></span> &nbsp;
                     {% endfor %}
-                </ul>
+                </p>
 
             </div>
 
