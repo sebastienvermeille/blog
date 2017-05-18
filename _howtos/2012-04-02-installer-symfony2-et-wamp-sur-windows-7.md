@@ -16,6 +16,7 @@ tags: ['php', 'symfony']
 
 1. TOC
 {:toc}
+---
 
 ## Installation de WAMP
 
