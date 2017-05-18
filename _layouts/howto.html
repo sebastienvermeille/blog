@@ -9,10 +9,10 @@ permalink: /howto
     <div class="z-depth-1" style="padding:16px; background-color:white;">
         <article class="howto">
             <section class="header">
-                <h2>{{ page.title }}</h2>
+                <h2 class="white-text">{{ page.title }}</h2>
                 <img src="{{ howto.cover }}"/>
 
-                <p>Publié par Sébastien Vermeille le {{ page.date }}, mis à jour le {{ page.updatedAt }} (0 lectures)</p>
+                <p class="white-text">Publié par Sébastien Vermeille le {{ page.date }}, mis à jour le {{ page.updatedAt }} (0 lectures)</p>
                 <ul class="tags">
                     {% for tag in page.tags %}
                     <li data-badge-caption="{{ tag }}" class="new badge"></li>
