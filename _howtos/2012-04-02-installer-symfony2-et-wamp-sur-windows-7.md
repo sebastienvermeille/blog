@@ -12,6 +12,8 @@ tags: ['php', 'symfony']
 ---
 
 ### Sommaire
+{:.no_toc}
+
 * TOC
 {:toc}
 
