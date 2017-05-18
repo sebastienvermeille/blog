@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+   {% assign currentLanguage = 'en' %}
+   {% if page.lang[0] %}
+   {% assign currentLanguage = page.lang[0] %}
+   {% endif %}
+
+   <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description[currentLanguage]
+      }}</title>
+
+   {% include meta.html %}
+
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+   <!--Import Google Icon Font-->
+   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+   <!-- Compiled and minified JavaScript -->
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+   <!--Let browser know website is optimized for mobile-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   <!--&lt;!&ndash;[if lt IE 9]>-->
+   <!--<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+   <!--<![endif]&ndash;&gt;-->
+
+   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
+   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description[currentLanguage] }}"
+         href="{{ site.baseurl }}/feed.xml"/>
+
+</head>
+
+<body>
+<!-- navbar:start -->
+<header class="navbar-fixed">
+   <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+         <a id="logo-container" href="{{ site.baseurl }}/" class="site-avatar">
+            <img src="{{ site.avatar }}"/>
+
+            <!--<div class="site-info">-->
+            <!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
+            <!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
+            <!--</div>-->
+
+         </a>
+         {% include breadcrumb.html path=page.path title=page.title %}
+         {% include navbar-links.html %}
+         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+   </nav>
+</header>
+<!-- navbar:end -->
+
+<!-- content:start -->
+<main class="row">
+   <div class="container">
+   {{ content }}
+   </div>
+</main>
+<!-- content:end -->
+
+{% include footer.html %}
+
+{% include analytics.html %}
+<script type="text/javascript" src="{{ site.url }}/showads.js" ></script>
+<script type="text/javascript" src="{{ site.url }}/assets/js/scripts.js"></script>
+</body>
+</html>
