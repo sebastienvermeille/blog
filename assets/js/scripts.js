@@ -93,7 +93,7 @@ $(document).ready(function() {
     if (window.canRunAds === undefined) {
         // adblocker detected, show fallback
         console.info("ADBLOCK DETECTED :)");
-        $('#adblock').show();
+      //  $('#yoda').show();
     }
 });
 
