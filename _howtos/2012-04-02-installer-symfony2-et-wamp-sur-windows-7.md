@@ -12,6 +12,7 @@ tags: ['php', 'symfony']
 ---
 
 ### Sommaire
+* TOC
 {:toc}
 
 ## Installation de WAMP
