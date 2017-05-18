@@ -16,3 +16,11 @@ article.howto {
     }
   }
 }
+
+#markdown-toc {
+  @extend .collection;
+
+  li {
+    @extend .collection-item;
+  }
+}
