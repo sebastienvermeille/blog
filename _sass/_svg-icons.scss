@@ -3,11 +3,17 @@ a {
 }
 
 .svg-icon {
-  width: 40px;
-  height: 40px;
+
   display: inline-block;
   font-size: 3em;
   color:white;
+
+  background-color: black;
+  border-radius: 50px;
+  width: 64px;
+  height: 64px;
+  padding-left: 10px;
+  padding-top: 6px;
 
   &.github {
   }
