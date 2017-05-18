@@ -11,6 +11,9 @@ github: todo
 tags: ['php', 'symfony']
 ---
 
+### Sommaire
+{:toc}
+
 ## Installation de WAMP
 
 ![Logo WampServer](../media/howto/wamp-printscreen.png "Logo WampServer")
