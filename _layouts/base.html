@@ -10,14 +10,7 @@
       }}</title>
 
    {% include meta.html %}
-
    {% include styles.html %}
-
-
-
-   <!-- Compiled and minified JavaScript -->
-   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description[currentLanguage] }}"
          href="{{ site.baseurl }}/feed.xml"/>
@@ -31,12 +24,6 @@
       <div class="nav-wrapper container">
          <a id="logo-container" href="{{ site.baseurl }}/" class="site-avatar">
             <img src="{{ site.avatar }}"/>
-
-            <!--<div class="site-info">-->
-            <!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
-            <!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
-            <!--</div>-->
-
          </a>
          {% include breadcrumb.html path=page.path title=page.title %}
          {% include navbar-links.html %}
@@ -53,9 +40,6 @@
 <!-- content:end -->
 
 {% include footer.html %}
-
-{% include analytics.html %}
-<script type="text/javascript" src="{{ site.url }}/showads.js" ></script>
-<script type="text/javascript" src="{{ site.url }}/assets/js/scripts.js"></script>
+{% include scripts.html %}
 </body>
 </html>
