@@ -2,11 +2,11 @@
 
 // Mixins
 // @import "components/prefixer";
-@import "components/mixins";
-@import "components/color";
+@import "materialize/components/mixins";
+@import "materialize/components/color";
 
 // Variables;
-@import "matecomponents/variables";
+@import "materialize/components/variables";
 
 // Reset
 @import "materialize/components/normalize";
