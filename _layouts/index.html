@@ -37,14 +37,6 @@
 <body>
 {% include sidenav.html %}
 <!-- navbar:start -->
-<main class="row">
-   <div class="container">
-      {{ content }}
-   </div>
-</main>
-<!-- navbar:end -->
-
-<!-- content:start -->
 <header class="navbar-fixed">
    <nav class="light-blue lighten-1" role="navigation">
       <div class="nav-wrapper container">
@@ -64,6 +56,15 @@
       </div>
    </nav>
 </header>
+<!-- navbar:end -->
+
+<!-- content:start -->
+<main class="row">
+   <div class="container">
+      {{ content }}
+   </div>
+
+</main>
 <!-- content:end -->
 {% include footer.html %}
 
