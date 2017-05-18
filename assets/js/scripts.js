@@ -64,6 +64,10 @@ $(document).ready(function(){
         var target = this.hash;
         var $target = $(target);
 
+        if(target == '#'){
+            return;
+        }
+
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
         }, 900, 'swing', function () {
