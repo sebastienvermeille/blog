@@ -1,1 +1,18 @@
-$off-black: #454545;  // Override default font color used by materialize for title h1h2h3h4
+// Typography Materialize
+// ==========================================================================
+
+//$off-black: rgba(0, 0, 0, 0.87) !default;
+$off-black: #454545;
+
+// Header Styles
+//$h1-fontsize: 4.2rem !default;
+$h1-fontsize: 2.92rem;
+//$h2-fontsize: 3.56rem !default;
+$h2-fontsize: 2.28rem;
+//$h3-fontsize: 2.92rem !default;
+$h3-fontsize: 1.64rem;
+//$h4-fontsize: 2.28rem !default;
+$h4-fontsize: 1rem;
+//$h5-fontsize: 1.64rem !default;
+//$h6-fontsize: 1rem !default;
+
