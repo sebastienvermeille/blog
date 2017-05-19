@@ -25,5 +25,8 @@ article.howto {
 
 .howto-container {
 
+  img {
+    @extend responsive-img;
+  }
 
 }
