@@ -92,7 +92,7 @@ ul.grid {
 }
 
 body {
-   background-image:url('assets/images/fabric_of_squares_gray.png');
+   //background-image:url('assets/images/fabric_of_squares_gray.png');
    //background-image:url('assets/images/grey_wash_wall.png');
    //background-image:url('assets/images/sneaker_mesh_fabric.png');
    //background-image:url('assets/images/1.jpg');
@@ -108,8 +108,7 @@ ul#howtos-container{
 @import "variables";
 @import "materialize/materialize";
 @import "svg-icons";
-//@import "highlights";
-@import "monokai";
+@import "monokai";   // Highlighter
 @import "hexagon";
 @import "howto";
 
@@ -132,28 +131,12 @@ blockquote p {
    display: inline;
 }
 
-body {counter-reset: h2}
-h2 {counter-reset: h3}
-h3 {counter-reset: h4}
-h4 {counter-reset: h5}
-h5 {counter-reset: h6}
-
-h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none }
-
 #summary {
+   display:none;
    position: fixed;
    left: 5px;
    top: 80px;
    width: 193px;
-}
-
-article.post {
-  h2:before {counter-increment: h2; content: counter(h2) ". "}
-  h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
-  h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
-  h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
-  h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
-
 }
 
 .breadcrumb-container {
