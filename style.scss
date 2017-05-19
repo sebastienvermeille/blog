@@ -217,7 +217,7 @@ html {
 }
 
 .howto-container {
-   h1, h2, h3, h4, h5, h6 {
+   h1, h2, h3 {
       font-weight:800;
    }
 
@@ -239,5 +239,8 @@ hr {
 
 h1.howto-title {
    @extend h2;
-   margin: inherit;
+   margin-bottom: 15px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 7.5px;
 }
