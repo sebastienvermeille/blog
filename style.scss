@@ -221,9 +221,15 @@ html {
       font-weight:800;
    }
 
-   h2 {
-      margin: 2rem 0 1.2rem 0;
+   h1, h2, h3 {
+      margin: 2rem 0;
    }
+
+   h1.howto-title {
+      @extend h2;
+      margin: 7.5px 15px 7.5px 15px;
+   }
+
 }
 
 .comments-container {
@@ -237,7 +243,4 @@ hr {
    background: #ddd;
 }
 
-.howto-container h1.howto-title {
-   @extend h2;
-   margin: 7.5px 15px 7.5px 15px;
-}
+.howto-container
