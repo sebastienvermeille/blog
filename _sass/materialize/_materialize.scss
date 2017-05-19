@@ -6,7 +6,8 @@
 @import "materialize/components/color";
 
 // Variables;
-@import "materialize/components/variables";
+//@import "materialize/components/variables";
+// we use the parent variables to avoid override internal materialize files
 
 // Reset
 @import "materialize/components/normalize";
