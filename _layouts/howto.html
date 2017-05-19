@@ -13,7 +13,7 @@ permalink: /howto
                 <h2 class="white-text">{{ page.title }}</h2>
                 <img src="{{ page.cover }}" class="circle responsive-img"/>
 
-                <p class="white-text">Publié par Sébastien Vermeille le {{ page.createdAt | date: "%d/%m/%Y" }}, mis à jour le {{ page.updatedAt | date: "%d/%m/%Y" }} (0 lectures)</p>
+                <p class="white-text">Publié par Sébastien Vermeille le {{ page.createdAt | date: "%d/%m/%Y" }}{% if page.updatedAt != blank %}, mis à jour le {{ page.updatedAt | date: "%d/%m/%Y" }}{% endif %} (0 lectures)</p>
                 <p class="tags white-text">
                     <i class="material-icons white-text" style="vertical-align:middle;">loyalty</i>
                     {% for tag in page.tags %}
