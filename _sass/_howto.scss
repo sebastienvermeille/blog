@@ -29,4 +29,13 @@ article.howto {
     @extend .responsive-img;
   }
 
+  pre.highlight {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: .3em;
+
+    border-left: 1rem solid #008cba;
+  }
+
 }
