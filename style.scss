@@ -237,6 +237,7 @@ hr {
    background: #ddd;
 }
 
-.howto {
-
+h1.howto-title {
+   @extend h2;
+   margin: inherit;
 }

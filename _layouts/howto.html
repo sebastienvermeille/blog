@@ -10,7 +10,7 @@ permalink: /howto
         <article class="howto">
             <div class="card-panel blue darken-1">
 
-                <h1 class="white-text">{{ page.title }}</h1>
+                <h1 class="white-text howto-title">{{ page.title }}</h1>
                 <img src="{{ page.cover }}" class="circle responsive-img"/>
 
                 <p class="white-text">Publié par Sébastien Vermeille le {{ page.createdAt | date: "%d/%m/%Y" }}{% if page.updatedAt != blank %}, mis à jour le {{ page.updatedAt | date: "%d/%m/%Y" }}{% endif %} (0 lectures)</p>
