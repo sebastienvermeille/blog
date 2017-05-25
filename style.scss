@@ -249,7 +249,8 @@ hr {
    background-repeat: no-repeat;
    margin:0;
 
-
+   align-items: flex-end;
+   flex-direction: row;
 
 
    //@media all and (orientation:square) {
@@ -262,7 +263,7 @@ hr {
       background-size: cover;
       background-position-y: 60%;
       min-height: 421px;
-      display: flex;
+    
       height: 100%;
    }
 
@@ -300,7 +301,6 @@ hr {
 }
 
 .superseb {
-   margin-top: 44px;
 
    @media all and (orientation:landscape) {
       width: 60%;
@@ -309,6 +309,5 @@ hr {
 
    @media all and (orientation:portrait) {
       width: 80%;
-      align-self: flex-end;
    }
 }
