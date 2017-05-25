@@ -244,7 +244,9 @@ hr {
 }
 
 .natural-background {
-   background-size: cover;
+   background-size: contain;
+   background-color: #97c93d;
+   background-repeat: no-repeat;
    margin:0;
 
    //@media all and (orientation:square) {
