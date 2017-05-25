@@ -258,6 +258,7 @@ hr {
       background-image:url('./assets/images/svg/bg-square.svg');
       background-size: cover;
       background-position-y: 60%;
+      min-height: 421px;
    }
 
    @media all and (orientation:landscape) {
@@ -291,4 +292,18 @@ hr {
 
 .grass-green {
    background-color: #97c93d !important;
+}
+
+.superseb {
+   width:60%;
+
+   @media all and (orientation:portrait) {
+      margin-bottom:44px;
+   }
+
+   @media all and (orientation:landscape) {
+      margin-top:44px;
+   }
+
+
 }
