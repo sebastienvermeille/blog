@@ -295,15 +295,6 @@ hr {
 }
 
 .superseb {
-   width:60%;
-
-   @media all and (orientation:portrait) {
-      margin-bottom:44px;
-   }
-
-   @media all and (orientation:landscape) {
-      margin-top:44px;
-   }
-
-
+   width: 60%;
+   margin-top: 44px;
 }
