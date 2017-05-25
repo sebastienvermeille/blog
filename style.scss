@@ -244,7 +244,7 @@ hr {
 }
 
 .natural-background {
-   background-size: contain;
+
    background-color: #97c93d;
    background-repeat: no-repeat;
    margin:0;
@@ -256,11 +256,14 @@ hr {
 
    @media all and (orientation:portrait) {
       background-image:url('./assets/images/svg/bg-portrait.svg');
+      background-size: cover;
+      background-position-y: 60%;
    }
 
    @media all and (orientation:landscape) {
       /* Style adjustments for landscape mode goes here */
       background-image:url('./assets/images/svg/bg-landscape.svg');
+      background-size: contain;
    }
 
 
