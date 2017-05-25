@@ -251,7 +251,7 @@ hr {
 
    align-items: flex-end;
    flex-direction: row;
-
+   text-align: center;
 
    //@media all and (orientation:square) {
    //   /* Style adjustments for landscape mode goes here */
@@ -271,7 +271,6 @@ hr {
       /* Style adjustments for landscape mode goes here */
       background-image:url('./assets/images/svg/bg-landscape.svg');
       background-size: 100%;
-      text-align: center;
    }
 
 
