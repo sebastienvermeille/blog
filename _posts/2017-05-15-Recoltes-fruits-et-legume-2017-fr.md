@@ -11,6 +11,8 @@ shortDescription: Une liste regroupant les pesées de mes récoltes de 2017.
 ## Tableau des récoltes
 Je note ici tout ce que je récolte durant cette année afin de pouvoir comparer avec les prochaines années si je peux améliorer mes rendements :)
 
-|Légume/Fruit   	            |Poids   	|
-|-------------------------------|-----------|
-| 1x salade verte pommée 	    |           |
+|Date           |Légume/Fruit   	            |Poids   	|
+|---------------|-------------------------------|-----------|
+| ???           | 1x salade verte pommée 	    |           |
+| 24.05.2017    | Fraises                       | 290g      |
+| toute saison  | Menthe, Ciboulette, Persil    | -         |
