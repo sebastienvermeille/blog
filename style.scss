@@ -263,7 +263,7 @@ hr {
    @media all and (orientation:landscape) {
       /* Style adjustments for landscape mode goes here */
       background-image:url('./assets/images/svg/bg-landscape.svg');
-      background-size: contain;
+      background-size: 100%;
    }
 
 
