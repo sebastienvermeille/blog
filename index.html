@@ -10,6 +10,8 @@ layout: index
 
 <div class="col s12 m8 l9 xl6">
 
+  {% comment %}
+
   <div class="collection">
     <div class="collection-header">
       <h2>Derniers articles</h2>
@@ -27,6 +29,13 @@ layout: index
     <a class="collection-item" href="{{ howto.baseurl }}{{ howto.url }}">{{ howto.title }}</a>
     {% endfor %}
   </div>
+
+  {% endcomment %}
+
+  <p style="text-align:center; width:100%;">
+
+    <img src="{{ site.baseurl }}/assets/images/svg/superseb.svg"/>
+  </p>
 
 </div>
 
