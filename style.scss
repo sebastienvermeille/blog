@@ -249,6 +249,9 @@ hr {
    background-repeat: no-repeat;
    margin:0;
 
+
+
+
    //@media all and (orientation:square) {
    //   /* Style adjustments for landscape mode goes here */
    //   background-image:url('./assets/images/svg/bg-square.svg');
@@ -259,6 +262,8 @@ hr {
       background-size: cover;
       background-position-y: 60%;
       min-height: 421px;
+      display: flex;
+      height: 100%;
    }
 
    @media all and (orientation:landscape) {
@@ -304,5 +309,6 @@ hr {
 
    @media all and (orientation:portrait) {
       width: 80%;
+      align-self: flex-end;
    }
 }
