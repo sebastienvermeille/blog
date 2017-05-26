@@ -18,20 +18,7 @@
 </head>
 
 <body>
-<!-- navbar:start -->
-<header class="navbar-fixed">
-   <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container">
-         <a id="logo-container" href="{{ site.baseurl }}/" class="site-avatar">
-            <img src="{{ site.avatar }}"/>
-         </a>
-         {% include breadcrumb.html path=page.path title=page.title %}
-         {% include navbar-links.html %}
-         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-   </nav>
-</header>
-<!-- navbar:end -->
+{% include navbar.html %}
 
 <!-- content:start -->
 <main class="row natural-background">

@@ -18,25 +18,26 @@
 </head>
 
 <body>
+{% include navbar.html %}
 <!-- navbar:start -->
-<header class="navbar-fixed">
-   <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container">
-         <a id="logo-container" href="{{ site.baseurl }}/" class="site-avatar">
-            <img src="{{ site.avatar }}"/>
+<!--<header class="navbar-fixed">-->
+   <!--<nav class="light-blue lighten-1" role="navigation">-->
+      <!--<div class="nav-wrapper container">-->
+         <!--<a id="logo-container" href="{{ site.baseurl }}/" class="site-avatar">-->
+            <!--<img src="{{ site.avatar }}"/>-->
 
-            <!--<div class="site-info">-->
-            <!--<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>-->
-            <!--<p class="site-description">{{ site.description[currentLanguage] }}</p>-->
-            <!--</div>-->
+            <!--&lt;!&ndash;<div class="site-info">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>&ndash;&gt;-->
+            <!--&lt;!&ndash;<p class="site-description">{{ site.description[currentLanguage] }}</p>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-         </a>
-         {% include breadcrumb.html path=page.path title=page.title %}
-         {% include navbar-links.html %}
-         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-      </div>
-   </nav>
-</header>
+         <!--</a>-->
+         <!--{% include breadcrumb.html path=page.path title=page.title %}-->
+         <!--{% include navbar-links.html %}-->
+         <!--<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
+      <!--</div>-->
+   <!--</nav>-->
+<!--</header>-->
 <!-- navbar:end -->
 
 <!-- content:start -->
