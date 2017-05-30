@@ -1,5 +1,5 @@
 <ul class="right hide-on-med-and-down">
-   {% for menu in site.navbar[page.lang] %}
+   {% for menu in site.navbar[currentLanguage] %}
    <li><a href="{{ menu[1].url }}">{{ menu[1].name }}</a></li>
    {% endfor %}
 </ul>
