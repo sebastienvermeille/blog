@@ -42,7 +42,7 @@ navbar:
       url: "/projets"
     blog:
       name: "Blog"
-      url: "/le-blog"
+      url: "/blog"
     about:
       name: "À propos"
       url: "/a-propos"

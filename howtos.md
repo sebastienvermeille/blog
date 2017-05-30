@@ -1,9 +1,9 @@
 ---
 layout: howtos
-title: Howto
+title: Tutoriaux
 lang: en
-permalink: /howto
+permalink: /tutoriaux
 ---
 
-Howto
+Tutoriaux
 ==================
