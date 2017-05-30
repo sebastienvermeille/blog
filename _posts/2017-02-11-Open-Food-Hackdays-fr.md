@@ -6,6 +6,7 @@ ref: open-food-hackdays
 date: 2017-02-11 00:00
 cover: ../media/blog/cover/openfood.png
 shortDescription: Mon premier hackathon!
+comments: true
 ---
 
 C'est parti pour mon premier Hackathon ! 

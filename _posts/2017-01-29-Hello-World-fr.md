@@ -6,6 +6,7 @@ ref: hello-world
 date: 2017-01-29 00:00
 cover: ../media/blog/cover/helloworld.png
 shortDescription: Après 5 ans sur Wordpress, je déplace mon blog vers un système de blogging statique. 
+comments: true
 ---
 
 Après 5 ans sur Wordpress, je déplace mon blog vers un système de blogging statique. 

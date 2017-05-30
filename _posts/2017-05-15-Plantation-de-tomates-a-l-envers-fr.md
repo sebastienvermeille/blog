@@ -6,6 +6,7 @@ ref: culture-de-tomates-a-l-envers
 date: 2017-05-15 00:00
 cover: ../media/blog/cover/tomatoes.png
 shortDescription: Voici comment faire pousser des tomates sans tuteurs sans prise de tête.
+comments: true
 ---
 
 ## Ma life

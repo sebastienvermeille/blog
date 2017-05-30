@@ -6,6 +6,7 @@ ref: recoltes-fruits-et-legumes-2017
 date: 2017-05-15 00:00
 cover: ../media/blog/cover/vegetables.png
 shortDescription: Une liste regroupant les pesées de mes récoltes de 2017.
+comments: true
 ---
 
 ## Tableau des récoltes
