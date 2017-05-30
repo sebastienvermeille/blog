@@ -25,7 +25,7 @@ function locationHashChanged() {
 
     var url = window.location.href;
 
-    if(url.indexOf("/howto/") > -1 && location.hash.indexOf("#") > -1) {
+    if(url.indexOf("/tutoriaux/") > -1 && location.hash.indexOf("#") > -1) {
         var activeSection = location.hash;
 
         $('div#summary a').each(function(){
