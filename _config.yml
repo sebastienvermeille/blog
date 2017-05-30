@@ -19,6 +19,34 @@ i18n:
     en: About
     fr: A Propos
 
+navbar:
+  en:
+    howto:
+      name: "Howto"
+      url: "/howto"
+    projects:
+      name: "Projects"
+      url: "/projects"
+    blog:
+      name: "Blog"
+      url: "/blog"
+    about:
+      name: "About"
+      url: "/about"
+  fr:
+    howto:
+      name: "Tutoriaux"
+      url: "/tutoriaux"
+    projects:
+      name: "Projets"
+      url: "/projets"
+    blog:
+      name: "Blog"
+      url: "/le-blog"
+    about:
+      name: "À propos"
+      url: "/a-propos"
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars3.githubusercontent.com/u/4329594?v=3&s=55
 
