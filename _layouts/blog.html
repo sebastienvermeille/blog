@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    {% assign currentLanguage = 'en' %}
+    {% assign currentLanguage = 'fr' %}
     {% if page.lang[0] %}
     {% assign currentLanguage = page.lang[0] %}
     {% endif %}
@@ -21,18 +21,6 @@
 <body>
 <!-- navbar:start -->
 {% include navbar.html %}
-<!--<header class="navbar-fixed">-->
-    <!--<nav class="light-blue lighten-1" role="navigation">-->
-        <!--<div class="nav-wrapper container">-->
-            <!--<a href="{{ site.baseurl }}/" class="site-avatar">-->
-                <!--<img src="{{ site.avatar }}"/>-->
-            <!--</a>-->
-            <!--{% include breadcrumb.html path=page.path %}-->
-            <!--{% include navbar-links.html %}-->
-            <!--<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>-->
-        <!--</div>-->
-    <!--</nav>-->
-<!--</header>-->
 
 <!-- content:start -->
 <main class="row">
@@ -50,7 +38,7 @@
                         <p class="unselectable"> {{ post.shortDescription }}</p>
                     </div>
                     <div class="card-action">
-                        <a href="{{ site.baseurl }}{{ post.url }}">Read More</a>
+                        <a href="{{ site.baseurl }}{{ post.url }}">Lire</a>
                     </div>
                 </div>
             </div>

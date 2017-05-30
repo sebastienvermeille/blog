@@ -18,9 +18,9 @@
     {% endcomment %}
 
     {% if include.path == 'howtos.md' %}
-    <a href="#" class="breadcrumb">Howto</a>
+    <a href="#" class="breadcrumb">Tutoriaux</a>
     {% elsif include.path contains "howto" %}
-    <a href="/howto" class="breadcrumb">Howto</a>
+    <a href="/howto" class="breadcrumb">Tutoriaux</a>
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
     {% endif %}
 
@@ -29,9 +29,9 @@
     {% endcomment %}
 
     {% if include.path == 'projects.md' %}
-    <a href="#" class="breadcrumb">Projects</a>
+    <a href="#" class="breadcrumb">Projets</a>
     {% elsif include.path contains "project" %}
-    <a href="/projects" class="breadcrumb">Projects</a>
+    <a href="/projects" class="breadcrumb">Projets</a>
     <a href="#" class="breadcrumb active">{{ include.title }}</a>
     {% endif %}
 
@@ -40,6 +40,6 @@
     {% endcomment %}
 
     {% if include.path == 'about.md' %}
-    <a href="#" class="breadcrumb">About</a>
+    <a href="#" class="breadcrumb">A propos</a>
     {% endif %}
 </div>
