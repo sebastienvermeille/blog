@@ -1,8 +1,9 @@
 ---
 layout: howtos
-title: Tutoriaux
+title: Howto
+lang: en
 permalink: /howto
 ---
 
-Derniers tutoriaux
+Howto
 ==================
