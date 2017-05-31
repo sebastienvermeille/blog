@@ -25,3 +25,7 @@ J'ai terminé ma Thèse de Bachelor avec mention.
 Alors là, je ne choquerai personne de mon entourage en disant cela, mais l'informatique occupe une grande place dans ma vie. Je passe minimum 3h par jour après le travail sur mon ordi à coder, sur IRC, une petite game  CS occasionellement, mais je suis pas un énorme gameur (casual gameur pour ceux qui connaissent).
 
 Je fais également voler mon drone j'adore ça l'été ! Et j'ai également découvert une nouvelle passion il y a environ 1 an et demi c'est l'aquaponie et plus en général le jardinage.
+
+#### Petite présentation
+
+[vers la présentation](http://www.svermeille.com/personal-presentation/)
