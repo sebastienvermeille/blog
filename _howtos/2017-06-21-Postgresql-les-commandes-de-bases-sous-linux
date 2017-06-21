@@ -25,3 +25,8 @@ Importer un fichier sql depuis la console psql directement:
 ```bash
 \i /chemin/du/fichier.sql
 ```
+
+Importer un fichier en bash (plus pratique au niveau des droits d'accès aux fichiers):
+```bash
+psql -U username -d databasename -f /chemin/du/fichier.sql
+```
