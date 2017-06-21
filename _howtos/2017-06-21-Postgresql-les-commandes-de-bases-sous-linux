@@ -1,0 +1,27 @@
+---
+layout: howto
+title: "[Postgresql] Les commandes de bases sous linux
+description: Liste non exhaustive des commandes de base pour Postgresql
+date: 2017-06-21 00:00
+cover: ../media/cover/postgresql.png
+lang: "fr"
+published: true
+comments: true
+github: 
+tags: ['postgresql', 'linux']
+---
+
+Accéder à la console postgresql avec l'utilisateur postgres depuis le terminal:
+```bash
+sudo -u postgres psql
+```
+
+Sortir du terminal (et oui ctrl + C ne fonctionne pas...) :
+```bash
+\q
+```
+
+Importer un fichier sql depuis la console psql directement:
+```bash
+\i /chemin/du/fichier.sql
+```
