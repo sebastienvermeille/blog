@@ -1,6 +1,6 @@
 ---
 layout: howto
-title: "[Postgresql] Les commandes de bases sous linux
+title: [Postgresql] Les commandes de bases sous linux
 description: Liste non exhaustive des commandes de base pour Postgresql
 date: 2017-06-21 00:00
 cover: ../media/cover/postgresql.png
