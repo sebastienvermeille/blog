@@ -178,4 +178,47 @@ Il suffit donc de lancer ce script :
 sudo /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh start
 ```
 
+## Définir sonarqube en tant que service
+
+sudo nano /usr/bin/sonar
+
+```shell
+#!/bin/sh
+#
+# rc file for SonarQube
+#
+# chkconfig: 345 96 10
+# description: SonarQube system (www.sonarsource.org)
+#
+### BEGIN INIT INFO
+# Provides: sonar
+# Required-Start: $network
+# Required-Stop: $network
+# Default-Start: 3 4 5
+# Default-Stop: 0 1 2 6
+# Short-Description: SonarQube system (www.sonarsource.org)
+# Description: SonarQube system (www.sonarsource.org)
+### END INIT INFO
+ 
+/usr/bin/sonar $*
+```
+
+Création du lien symbolique:
+```bash
+sudo ln -s /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh /usr/bin/sonar
+```
+
+```bash
+sudo chmod 755 /etc/init.d/sonar
+sudo chkconfig --add sonar
+```
+
+Voila maintenant on peut faire ceci :
+
+```bash
+sudo service sonar start
+sudo service sonar stop
+sudo service sonar restart
+```
+
 Votre serveur est lancé il suffit d'y accéder soit par http://localhost soit via l'ip locale ou publique de votre serveur ;)
