@@ -1,0 +1,61 @@
+---
+layout: howto
+title: "[SonarQube] Comment installer sonarqube sur Debian Jessie avec PostgreSQL"
+description: Un petit guide sur l'installation de sonarqube pour debian avec postgresql
+date: 2017-07-31 00:00
+cover: ../media/cover/sonarqube.png
+lang: "fr"
+published: true
+comments: true
+github: 
+tags: ['debian', 'sonar', 'sonarqube', 'postgresql']
+---
+
+# Les pré-requis pour suivre ce tutorial
+* Avoir un serveur sous Debian 8 (Jessie)
+* Avoir un accès ssh au serveur
+
+# Les pré-requis hardware conseillés par Sonarqube:
+* 2Gb de RAM dédiées à Sonarqube
+* L'espace disque dépend de votre projet. Sonarqube.com utilise postgresql 9.5 et utilise 15Gb de stockage.
+
+# Installation
+
+Nous allons installer ce que recommande sonarqube sur sa page (https://docs.sonarqube.org/display/SONAR/Requirements)[https://docs.sonarqube.org/display/SONAR/Requirements].
+
+## Installation d'Oracle JRE 8
+Le JRE d'oracle n'est pas disponible dans les dépots Debian pour des raison de licenses.
+
+Mais, WebUpd8 a créer son dépot privé et nous le fourni gratuitement.
+
+Ajout du dépot PPA:
+```bash
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | \
+  sudo tee /etc/apt/sources.list.d/webupd8team-java.list
+  
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | \
+  sudo tee -a /etc/apt/sources.list.d/webupd8team-java.list
+  
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886
+
+sudo apt-get update
+
+sudo apt-get install oracle-java8-installer
+```
+
+Oracle vous demande d'accepter sa license. (Autant dire que vous n'avez pas trop le choix :) )
+
+Petit test pour voir que l'installation s'est bien déroulée:
+```bash
+java -version
+
+# java version "1.8.xyz"                                  
+# Java(TM) SE Runtime Environment (xyu)                                
+# Java HotSpot(TM) 64-Bit Server VM (xyz) 
+```
+
+## Installation d'OpenJDK 8
+
+## Installation de PostgreSQL 9.x
+
+
