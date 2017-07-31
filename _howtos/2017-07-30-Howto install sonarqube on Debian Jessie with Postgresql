@@ -56,6 +56,24 @@ java -version
 
 ## Installation d'OpenJDK 8
 
+On ajoute le dépot backport:
+```bash
+echo "deb http://http.debian.net/debian jessie-backports main" | \
+sudo tee /etc/apt/sources.list.d/jessie-backports.list
+
+sudo apt-get update
+
+sudo apt-get install -t jessie-backports openjdk-8-jdk
+```
+
+Un petit contrôle que tout est ok entre le JDK et le JRE
+```bash
+sudo update-java-alternatives --list
+
+# java-1.8.0-openjdk-amd64 1069 /usr/lib/jvm/java-1.8.0-openjdk-amd64 <---- openjdk 1.8 = 8
+# java-8-oracle 1081 /usr/lib/jvm/java-8-oracle   <----- JRE 8
+```
+
 ## Installation de PostgreSQL 9.x
 
 
