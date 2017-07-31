@@ -180,7 +180,7 @@ sudo /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh start
 
 ## Définir sonarqube en tant que service
 
-sudo nano /usr/bin/sonar
+sudo nano /opt/sonarqube/service.sh
 
 ```shell
 #!/bin/sh
