@@ -156,8 +156,16 @@ sudo nano /opt/sonarqube/sonarqube-6.4/conf/sonar.properties
 
 Ajouter les valeurs correspondantes :
 > sonar.jdbc.username=sonar
+
 > sonar.jdbc.password=votreMotDePasse
+
 > sonar.jdbc.url=jdbc:postgresql://localhost/sonar <-- sonar = le nom de votre base de donnée
+
+> sonar.web.javaOpts=-server <-- optimise le processus java pour sonar
+
+> sonar.web.host=192.0.0.1  <-- l'ip locale de la machine par exemple.
+
+>sonar.web.port=80
 
 ## Démarrer le serveur sonarqube
 
