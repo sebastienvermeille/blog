@@ -159,3 +159,15 @@ Ajouter les valeurs correspondantes :
 > sonar.jdbc.password=votreMotDePasse
 > sonar.jdbc.url=jdbc:postgresql://localhost/sonar <-- sonar = le nom de votre base de donnée
 
+## Démarrer le serveur sonarqube
+
+Le script de démarrage se trouve dans le dossier:
+```bash
+cd /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh # pour un debian en 64 bits sinon choisissez linux-x86-32
+```
+Il suffit donc de lancer ce script :
+```bash
+sudo /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh start
+```
+
+Votre serveur est lancé il suffit d'y accéder soit par http://localhost soit via l'ip locale ou publique de votre serveur ;)
