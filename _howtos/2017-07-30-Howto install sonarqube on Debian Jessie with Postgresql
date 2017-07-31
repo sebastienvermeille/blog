@@ -178,7 +178,7 @@ Il suffit donc de lancer ce script :
 sudo /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh start
 ```
 
-## Définir sonarqube en tant que service
+## Définir sonarqube en tant que service (Pas encore fonctionnel !)
 
 sudo nano /opt/sonarqube/service.sh
 
