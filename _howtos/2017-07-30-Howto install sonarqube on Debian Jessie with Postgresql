@@ -15,6 +15,7 @@ tags: ['debian', 'sonar', 'sonarqube', 'postgresql']
 * Avoir un serveur sous Debian 8 (Jessie)
 * Avoir installé wget (sudo apt-get install wget -y)
 * Avoir installé unzip (sudo apt-get install unzip -y)
+* Avoir installé chkconfig (sudo apt-get install chkconfig)
 * Avoir un accès ssh au serveur
 
 # Les pré-requis hardware conseillés par Sonarqube:
@@ -178,9 +179,9 @@ Il suffit donc de lancer ce script :
 sudo /opt/sonarqube/sonarqube-6.4/bin/linux-x86-64/sonar.sh start
 ```
 
-## Définir sonarqube en tant que service (Pas encore fonctionnel !)
+## Définir sonarqube en tant que service
 
-sudo nano /opt/sonarqube/service.sh
+sudo nano /etc/init.d/sonar
 
 ```shell
 #!/bin/sh
