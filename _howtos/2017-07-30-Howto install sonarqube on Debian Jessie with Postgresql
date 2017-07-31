@@ -14,6 +14,7 @@ tags: ['debian', 'sonar', 'sonarqube', 'postgresql']
 # Les pré-requis pour suivre ce tutorial
 * Avoir un serveur sous Debian 8 (Jessie)
 * Avoir installé wget (sudo apt-get install wget -y)
+* Avoir installé unzip (sudo apt-get install unzip -y)
 * Avoir un accès ssh au serveur
 
 # Les pré-requis hardware conseillés par Sonarqube:
@@ -104,3 +105,57 @@ psql --version
 Super on peut passer à la suite :)
 
 ## Création d'un user et d'une base de donnée pour SonarQube
+
+On se connecte à postgres:
+```bash
+sudo su - postgres
+psql
+```
+(Si jamais pour fermer ce terminal il suffit de taper \q + enter -> ctrl + X ne fonctionnera pas :)
+
+On crée notre utilisateur (toujours depuis le terminal postgres):
+```sql
+CREATE USER sonar WITH PASSWORD 'yourpassword'; -- Je l'ai appelé sonar mais vous êtes libre d'en choisir un autre
+```
+
+On crée ensuite la base de donnée:
+```sql
+CREATE DATABASE sonar; -- Pareil vous pouvez changer le nom
+```
+
+On autorise notre utilisateur à tout faire sur cette base de donnée:
+```sql
+GRANT ALL PRIVILEGES ON DATABASE sonar to sonar;
+```
+
+On quitte le terminal psql: "\q"
+
+On se déconnecte de "psql" pour revenir à notre utilisateur classique:
+```bash
+exit
+```
+
+## Installation de sonarqube:
+
+On récupère l'archive de la version qui nous intéresse sur la page sonarqube : (https://www.sonarqube.org/downloads/)[https://www.sonarqube.org/downloads/]
+
+Dans le cas de ce tuto nous utiliserons la version 6.4 non LTS mais libre à vous de choisir la release LTS l'installation se fera de la mme manière.
+
+```bash
+sudo mkdir /opt/sonarqube
+cd /opt/sonarqube
+sudo wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.4.zip
+sudo unzip sonarqube-6.4.zip -d .
+sudo rm sonarqube-6.4.zip
+```
+Maintenant on adapte le fichier de configuration pour que sonarqube puisse accéder à la base de donnée:
+
+```bash
+sudo nano /opt/sonarqube/sonarqube-6.4/conf/sonar.properties
+```
+
+Ajouter les valeurs correspondantes :
+> sonar.jdbc.username=sonar
+> sonar.jdbc.password=votreMotDePasse
+> sonar.jdbc.url=jdbc:postgresql://localhost/sonar <-- sonar = le nom de votre base de donnée
+
