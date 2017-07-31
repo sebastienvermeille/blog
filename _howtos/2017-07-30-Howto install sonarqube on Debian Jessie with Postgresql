@@ -13,6 +13,7 @@ tags: ['debian', 'sonar', 'sonarqube', 'postgresql']
 
 # Les pré-requis pour suivre ce tutorial
 * Avoir un serveur sous Debian 8 (Jessie)
+* Avoir installé wget (sudo apt-get install wget -y)
 * Avoir un accès ssh au serveur
 
 # Les pré-requis hardware conseillés par Sonarqube:
@@ -74,6 +75,32 @@ sudo update-java-alternatives --list
 # java-8-oracle 1081 /usr/lib/jvm/java-8-oracle   <----- JRE 8
 ```
 
-## Installation de PostgreSQL 9.x
+## Installation de PostgreSQL 9.6
 
+(On peut installer également du OracleDB, MySQL ou MS SQL Server)
+J'ai fais ce choix simplement parce que j'ai lu dans la doc que Sonarqube.com utilise postgresql donc je présume que si un bug survient, l'équipe sera instantannément au courant :).
 
+(Oui je sais ils ont surement des environment de test automatisés :) )
+
+C'est parti:
+```bash
+wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+
+echo "deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main" | \
+sudo tee /etc/apt/sources.list.d/pgdg.list
+
+sudo apt-get update
+
+sudo apt-get install postgresql postgresql-contrib
+```
+
+Petit contrôle:
+```bash
+psql --version
+
+# psql (PostgreSQL) 9.6.3
+```
+
+Super on peut passer à la suite :)
+
+## Création d'un user et d'une base de donnée pour SonarQube
