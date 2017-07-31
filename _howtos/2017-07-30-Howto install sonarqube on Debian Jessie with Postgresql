@@ -161,11 +161,11 @@ Ajouter les valeurs correspondantes :
 
 > sonar.jdbc.url=jdbc:postgresql://localhost/sonar <-- sonar = le nom de votre base de donnée
 
-> sonar.web.javaOpts=-server <-- optimise le processus java pour sonar
+> sonar.web.javaOpts=-server -Xmx1024m
 
 > sonar.web.host=192.0.0.1  <-- l'ip locale de la machine par exemple.
 
->sonar.web.port=80
+> sonar.web.port=80
 
 ## Démarrer le serveur sonarqube
 
