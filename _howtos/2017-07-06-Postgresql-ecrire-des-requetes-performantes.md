@@ -1,7 +1,7 @@
 ---
 layout: howto
-title: "[Postgresql] Ecrire des requêtes performantes
-description: Sur de grosses tables un simple update peut devenir très lent et paralyser votre système. Voici une briève liste des bons tuyaux que j'ai récupéré sur IRC, Stackoverflow et autres.
+title: "[Postgresql] Ecrire des requêtes performantes"
+description: "Sur de grosses tables un simple update peut devenir très lent et paralyser votre système. Voici une briève liste des bons tuyaux que j'ai récupéré sur IRC, Stackoverflow et autres."
 date: 2017-07-06 00:00
 cover: ../media/cover/postgresql.png
 lang: "fr"

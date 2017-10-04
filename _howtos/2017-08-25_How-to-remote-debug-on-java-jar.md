@@ -1,6 +1,6 @@
 ---
 layout: howto
-title: [JAVA] Débugger un JAR à distance
+title: "[JAVA] Débugger un JAR à distance"
 description: La solution
 date: 2017-06-14 00:00
 cover: ../media/cover/java.png

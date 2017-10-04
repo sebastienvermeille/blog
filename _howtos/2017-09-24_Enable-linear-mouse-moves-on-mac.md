@@ -1,9 +1,9 @@
 ---
 layout: howto
-title: [Mac] Activer les déplacement de souris linéaires sur MacOS
-description: Pour ceux qui veulent un mouvement de souris identique à ce qu'ils ont sur linux et windows.
+title: "[Mac] Activer les déplacement de souris linéaires sur MacOS"
+description: "Pour ceux qui veulent un mouvement de souris identique à ce qu'ils ont sur linux et windows."
 date: 2017-09-24 00:00
-cover: ../media/cover/mac.png
+cover: ../media/cover/apple.png
 lang: "fr"
 published: true
 comments: true

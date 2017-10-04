@@ -1,13 +1,13 @@
 ---
 layout: howto
-title: [Git] Oups j'ai oublié de faire une branche feature et j'ai commit mes changements sur la branche locale master.
+title: "[Git] Oups j'ai oublié de faire une branche feature et j'ai commit mes changements sur la branche locale master."
 description: La solution
 date: 2017-06-14 00:00
 cover: ../media/cover/git.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: ""
 tags: ['git']
 ---
 

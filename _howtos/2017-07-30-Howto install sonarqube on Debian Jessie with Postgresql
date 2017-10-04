@@ -3,7 +3,7 @@ layout: howto
 title: "[SonarQube] Comment installer sonarqube sur Debian Jessie avec PostgreSQL"
 description: Un petit guide sur l'installation de sonarqube pour debian avec postgresql
 date: 2017-07-31 00:00
-cover: ../media/cover/sonarqube.png
+cover: ../media/cover/sonar.png
 lang: "fr"
 published: true
 comments: true
