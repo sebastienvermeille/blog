@@ -317,4 +317,12 @@ div.entry {
 
 div.card-article {
    overflow:hidden;
+
+   div.card-image {
+      a {
+         img {
+            background-color:white;
+         }
+      }
+   }
 }
