@@ -13,17 +13,30 @@ tags: ['docker', 'rancher', 'kubernates', 'linux']
 
 # Introduction
 
-TODO
+Qu'est-ce que Rancher ?
+
+Rancher est une plateforme d'orchestration de containers Dockers.
+
+Le mieux pour vraiment comprendre l'intérêt de Rancher c'est que vous regardiez cette petite vidéo en français :
+
+[Devoxx France - Furmaniak et Yekhlef](https://www.youtube.com/watch?v=QFqt8xMTChY&t=955s)
+
+Ce qui m'a séduit personnellement dans rancher :
+* Il fournit une interface graphique très bien pensée qui va nous simplifier grandement la tâche de deploiement
+de mes containers dockers.
+
+* Avec Rancher je n'ai plus besoin de me connecter à chaque serveur de deploiement et faire mes deploiments à la mano
+
+* Si demain je veux deployer sur un 2e serveur certains services je vais dans l'interface je dis que je veux 2 instances
+et hop il va s'occuper de tout pour moi.
+
+
+(Nous installaerons la version 2 dont l'interface graphique change sensiblement de celle de la vidéo mais le principe reste le même)
 
 # Infrastructure
 Pour commencer voici une représentation de l'infrastructure que nous allons mettre en place dans ce tutoriel :
 
 ![Infrastructure overview](/assets/svg/install-rancher2-infrastructure.svg)
-
-* RANCHER MASTER (rancher)
-* WORKER-CARTMAN (host)
-* WORKER-KENNY (host)
-* WORKER-STAN (host)
 
 Bien évidemment vous pouvez l'adapter selon vos besoins mais c'est une bonne base pour comprendre et voir les
 possiblités offertes par Rancher.
