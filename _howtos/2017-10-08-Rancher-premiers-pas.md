@@ -75,3 +75,31 @@ En 2 mots on peut s'authentifier via un serveur LDAP comme le titre nous l'indiq
 
 Ceux qui ont un serveur LDAP sauront certainement remplir ces champs. Si besoin n'hésitez pas à demander
 et je ferai un tuto plus détaillé sur le sujet.
+
+# Les Hosts
+
+Je préfère les appeler des esclaves car je trouve cette approche plus claire. Nous avons donc un master (le serveur rancher).
+C'est lui qui va pouvoir orchestrer tout ce qui se passe.
+
+Et nous avons des slaves (Hosts) qui sont des serveurs sur lesquels vont être deployés les containers selon les ordres du master (Le serveur Rancher).
+
+Après l'installation de votre serveur Rancher vous verrez certainement un message:
+
+> Before adding your first service or launching a container, you'll need to add a Linux host with a supported version of Docker.
+
+C'est assez déroutant car vous venez d'installer votre serveur Rancher et ... il vous en demande déjà des autres.
+
+Mais pourquoi pas commencer par héberger des containers sur ce même serveur ?
+
+Exactement ! C'est ce qu'on va faire.
+
+Cliquez sur "Infrastructure > Hosts > Add a Host"
+
+![](/media/howto/rancher-add-master-as-host.png)
+
+Retournez sur "Infrastructure > Hosts" et tadaaa vous avez votre premier Host installé.
+
+On peut biensur en ajouter d'autre et c'est même vivement recommandé.
+
+
+
