@@ -1,0 +1,77 @@
+---
+layout: howto
+title: "[Docker] Rancher - Premiers pas"
+description: "Pour bien commencer avec Rancher"
+date: 2017-10-08 00:00
+cover: ../media/cover/rancher.png
+lang: "fr"
+published: true
+comments: true
+github: 
+tags: ['docker', 'rancher']
+---
+
+# Introduction
+
+Vous venez d'installer votre serveur Rancher et vous souhaitez commencer à l'utiliser.
+
+Parfait ! Voyons ensemble les possibilités qui nous sont offertes avec Rancher.
+
+# Authentification
+
+Juste après l'installation de Rancher le serveur est accessible publiquement à tous. Il faut donc immédiatement
+ définir une stratégie d'authentification.
+
+Rancher nous propose de nombreuses stratégies :
+
+![Active Directory, Azure AD, Github, Local, OpenLDAP, Shibboleth](/media/howto/rancher-auth-strategies.png)
+
+Nous verrons ici 3 des stratégies que j'ai utilisé:
+
+* Local
+* Github
+* OpenLDAP
+
+## Statégie d'authentification de type "Local"
+
+C'est la stratégie la plus basique. Elle consiste à stocker directement sur le serveur
+Rancher des utilisateurs avec login et mot de passe.
+
+![Formulaire de configuration](/media/howto/rancher-local-auth.png)
+
+On défini un login pour l'administrateur et on active la stratégie d'authentification locale.
+
+Rien de bien compliqué ici. Néanmoins ce type d'authentification n'est pas
+suffisamment sécurisé en l'état. En effet aucun système anti bruteforce n'est mis en place et vous
+devrez mettre en place un outil de type fail2ban ou autre pour palier à cette lacune.
+
+## Stratégie d'authentification de type "Github"
+
+Ma préférée. Cette méthode vous permet d'utiliser votre compte Github pour vous authentifier sur le
+serveur Rancher.
+
+Elle offre un réel avantage par rapport à la méthode "Local" qui est de déleguer tout le traffic
+ d'authentification à Github. Ainsi si quelqu'un de mal intentionné souhaite forcer le passage, c'est
+ les serveurs de Github et non votre Rancher qui subiront la menace. Et à l'évidence, Github dispose d'une
+ bien meilleure infrastructure que nous pour palier à ce genre d'attaques.
+
+![Formulaire de configuration authentification Github](/media/howto/rancher-github-auth.png)
+
+Pour installer cette authentification il suffit de créer une application Github ici:
+
+
+Et ensuite de fournir le Client ID et le Client Secret dans les champs prévus.
+
+Très simple :) merci Github.
+
+## Stratégie d'authentification de type "OpenLDAP"
+
+Pour ceux qui veulent faire les choses en grandes pompes ou au format "Enterprise" ceci devrait
+vous plaire.
+
+En 2 mots on peut s'authentifier via un serveur LDAP comme le titre nous l'indique.
+
+![Formulaire configuration authentification LDAP](/media/howto/rancher-ldap-auth.png)
+
+Ceux qui ont un serveur LDAP sauront certainement remplir ces champs. Si besoin n'hésitez pas à demander
+et je ferai un tuto plus détaillé sur le sujet.
