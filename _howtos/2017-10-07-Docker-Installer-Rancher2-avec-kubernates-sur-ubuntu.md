@@ -18,7 +18,7 @@ TODO
 # Infrastructure
 Pour commencer voici une représentation de l'infrastructure que nous allons mettre en place dans ce tutoriel :
 
-(TODO IMAGE)
+![Infrastructure overview](/assets/svg/install-rancher2-infrastructure.svg)
 
 * RANCHER MASTER (rancher)
 * WORKER-CARTMAN (host)
