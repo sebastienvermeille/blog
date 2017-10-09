@@ -101,5 +101,16 @@ Retournez sur "Infrastructure > Hosts" et tadaaa vous avez votre premier Host in
 
 On peut biensur en ajouter d'autre et c'est même vivement recommandé.
 
+# Les Stacks
+
+On peut voir une stack comme un projet généralement.
+Une stack est un groupe de services qui vont ensemble créer une application.
+
+Par exemple, on peut imaginer une stack qui s'appelle "blog" et qui sera composé de plusieurs
+services :
+
+* Container wordpress
+* Container mysql
+* Load balancer
 
 

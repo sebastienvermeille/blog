@@ -78,16 +78,25 @@ On met à jour notre liste de paquets apt:
 sudo apt-get update
 ```
 
-Finalement on installe docker CE :
+
+(ne plus faire) Finalement on installe docker CE :
 ```bash
 sudo apt-get install docker-ce
+```
+
+(a la place) On installe une version docker compatible avec Rancher:
+
+http://rancher.com/docs/rancher/v1.6/en/hosts/#supported-docker-versions
+
+```bash
+curl https://releases.rancher.com/install-docker/17.06.sh | sh
 ```
 
 On vérifie que l'installation s'est bien déroulée :
 ```bash
 docker -v
 
-# Docker version 17.09.0-ce, build afdb6d4
+# Docker version 17.06.0-ce, build cec0b72
 
 ```
 
