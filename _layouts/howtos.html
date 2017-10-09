@@ -29,7 +29,7 @@
             <div class="collection-header">
                <h8>Thèmes</h8>
             </div>
-            <a href="/howto" class="collection-item">Tous les thèmes</a>
+            <a href="/tutoriaux" class="collection-item">Tous les thèmes</a>
 
             <!-- Create empty arrays -->
             {% assign tags = '' | split: ',' %}
@@ -65,7 +65,7 @@
                   {% endif %}
                {% endfor %}
 
-               <a href="/howto#filter={{ currentTag }}"class="collection-item" data-filter=".filter-{{ currentTag }}">
+               <a href="/tutoriaux#filter={{ currentTag }}"class="collection-item" data-filter=".filter-{{ currentTag }}">
                   {{ currentTag }}<span class="badge">{{ counter }}</span>
                </a>
             {% endfor %}
