@@ -7,7 +7,7 @@ cover: ../media/cover/twig.png
 lang: "fr"
 published: true
 comments: true
-github: todo
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2012-04-07-symfony2-activer-la-fonction-debug-de-twig.md
 tags: ['php', 'symfony']
 ---
 
@@ -28,7 +28,8 @@ Ensuite dans votre fichier twig (ex : test.html.twig) :
 
 {% raw %}
 <pre><code>
-{% debug %} => Affichera toutes les variables assignées au moteur de template (semblable à la console de débogage de Smarty pour ceux qui connaissent)
+{% debug %} => Affichera toutes les variables assignées au moteur de template (semblable à la console de 
+débogage de Smarty pour ceux qui connaissent)
 
 {% debug varname %} => Affiche les infos relatives à la variable template « varname »
 </code></pre>

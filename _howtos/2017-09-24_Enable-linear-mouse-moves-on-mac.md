@@ -7,7 +7,7 @@ cover: ../media/cover/apple.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-09-24_Enable-linear-mouse-moves-on-mac.md
 tags: ['mac']
 ---
 

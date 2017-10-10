@@ -7,7 +7,7 @@ cover: ../media/cover/terminal-linux.png
 lang: "fr"
 published: true
 comments: true
-github: todo
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2016-06-31-comment-savoir-si-linux-installe-en-32-ou-64-bits.md
 tags: ['linux']
 ---
 

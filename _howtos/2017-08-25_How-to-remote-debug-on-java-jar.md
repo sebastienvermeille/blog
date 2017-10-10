@@ -7,7 +7,7 @@ cover: ../media/cover/java.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-08-25_How-to-remote-debug-on-java-jar.md
 tags: ['java']
 ---
 

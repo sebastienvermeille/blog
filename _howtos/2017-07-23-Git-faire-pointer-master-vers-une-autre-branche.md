@@ -7,7 +7,7 @@ cover: ../media/cover/git.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-07-23-Git-faire-pointer-master-vers-une-autre-branche.md
 tags: ['git']
 ---
 

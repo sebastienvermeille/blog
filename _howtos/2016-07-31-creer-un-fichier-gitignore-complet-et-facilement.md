@@ -1,24 +1,27 @@
 ---
 layout: howto
 title: "[Git] Créer un fichier .gitignore complet en 30 secondes avec gitignore.io"
-description: Commande pour désactiver et/ou réactiver les contraintes de clés étrangères dans une base de données MariaDB ou MySQL
+description: Voici un petit outil en ligne pour générer facilement un fichier gitignore.
 date: 2016-07-31 00:00
 cover: ../media/cover/gitignoreio.png
 lang: "fr"
 published: true
 comments: true
-github: https://github.com/sebastienvermeille/code.svermeille.com/blob/master/src/content/Databases/desactiver-les-foreign-keys-sur-mariadb-ou-mysql.md
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2016-07-31-creer-un-fichier-gitignore-complet-et-facilement.md
 tags: ['git']
 ---
 
-Aujourd’hui je partage ici une petite trouvaille qui me simplifie grandement la vie et qui devrait vous intéresser aussi si vous êtes ici.
+Aujourd’hui je partage ici une petite trouvaille qui me simplifie grandement la vie et qui devrait vous 
+intéresser aussi si vous êtes ici.
 
-Quand on stock un projet sur Git il arrive fréquemment qu'on se retrouve avec des fichiers propres à l’IDE utilisé ou encore de bons vieux fichiers .thumbs de windows ou autre selon l’OS. La cause ? Un .gitignore incomplet.
+Quand on stock un projet sur Git il arrive fréquemment qu'on se retrouve avec des fichiers propres à l’IDE 
+utilisé ou encore de bons vieux fichiers .thumbs de windows ou autre selon l’OS. La cause ? Un .gitignore incomplet.
 
 Gitignore.io - Une solution communautaire
 ------------------------------------------
-Ce superbe outil baptisé [gitignore.io](https://www.gitignore.io/) crée par Joe Blau est hébergé sur Github. Les pull requests sont possibles et 
-donc les développeurs peuvent l'améliorer en continue. Mis à jour par des développeurs pour les développeurs :
+Ce superbe outil baptisé [gitignore.io](https://www.gitignore.io/) crée par Joe Blau est hébergé sur Github. Les pull 
+requests sont possibles et donc les développeurs peuvent l'améliorer en continue. Mis à jour par des développeurs pour 
+les développeurs :
 
 ![Aperçu du site gitignore.io](../media/howto/gitignore.io.png "Aperçu du site gitignore.io")
 
@@ -26,13 +29,15 @@ Comment l'utiliser
 ------------------
 Ce site vous permet tout simplement de saisir via des mots-clés les différentes choses que vous souhaitez exclure.
 
-Prenons l'exemple d'un projet Java: Il existe plusieurs IDE qui vont créer leurs petits fichiers comme Eclipse, NetBeans, IntelliJ de JetBrains, etc.
+Prenons l'exemple d'un projet Java: Il existe plusieurs IDE qui vont créer leurs petits fichiers comme Eclipse, NetBeans, 
+IntelliJ de JetBrains, etc.
 
 Voici a quoi pourrait ressembler notre liste d'exclusion :
 
 ![Exemple de liste d'exclusion](../media/howto/gitignore.io.samplejava.png "Exemple de liste d'exclusion")
 
-Avec ces 4 mots-clés nous avons rejeté tous les fichiers spécifiques aux IDE eclipse, intelliJ, et NetBeans + les fichiers java inutiles (.class par exemple).
+Avec ces 4 mots-clés nous avons rejeté tous les fichiers spécifiques aux IDE eclipse, intelliJ, et NetBeans + les 
+fichiers java inutiles (.class par exemple).
 
 Il suffit ensuite de cliquer sur le bouton Generate et voici ce qu’on obtient :
 

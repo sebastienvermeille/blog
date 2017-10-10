@@ -7,7 +7,7 @@ cover: ../media/cover/sonar.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-07-30-Howto%20install%20sonarqube%20on%20Debian%20Jessie%20with%20Postgresql
 tags: ['debian', 'sonar', 'sonarqube', 'postgresql']
 ---
 

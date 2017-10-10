@@ -7,7 +7,7 @@ cover: ../media/cover/docker.png
 lang: "fr"
 published: true
 comments: true
-github: todo
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-05-11-supprimer-tous-les-containers-docker.md
 tags: ['docker', 'linux']
 ---
 
@@ -17,8 +17,6 @@ Pour désactiver tous les containers docker:
 ~~~
 docker stop $(docker ps -a -q)
 ~~~
-
-
 
 Pour supprimer tous les containers docker (ils doivent être stoppés au préalable):
 ~~~
