@@ -7,7 +7,7 @@ cover: ../media/cover/docker.png
 lang: "fr"
 published: true
 comments: true
-github: todo
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-05-11-downgrader-sa-version-de-docker-sur-debian-ou-ubuntu.md
 tags: ['docker', 'linux', 'debian', 'ubuntu']
 ---
 

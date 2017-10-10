@@ -8,7 +8,7 @@ cover: ../media/cover/symfony.png
 lang: "fr"
 published: true
 comments: true
-github: todo
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2012-04-02-installer-symfony2-et-wamp-sur-windows-7.md
 tags: ['php', 'symfony']
 ---
 
@@ -26,9 +26,13 @@ tags: ['php', 'symfony']
 Pour commencer, il faut télécharger l’installeur wamp disponible gratuitement sur son [site officiel](http://www.wampserver.com/) dans la section 
 **Télécharger**.
 
-> Notez qu’il est disponible en version 32 et 64 bits veillez donc à choisir la bonne version en regard de votre système d’exploitation afin d’en tirer pleinement satisfaction
+> Notez qu’il est disponible en version 32 et 64 bits veillez donc à choisir la bonne version en regard de votre système 
+d’exploitation
 
-Dès lors que le téléchargement est terminé vous pouvez procéder à son installation. L’installation est très simple je ne m’attarderai pas dessus afin de rester centré uniquement sur l’essentiel dans ce tutoriel.
+Dès lors que le téléchargement est terminé, vous pouvez procéder à son installation. 
+
+L’installation est très simple je ne m’attarderai pas dessus afin de rester centré uniquement sur l’essentiel dans ce 
+tutoriel.
 
 ## Configuration de la variable d'environnement **PATH** pour PHP
 
@@ -38,7 +42,8 @@ Pour savoir si php est déjà enregistré dans le path de votre système lancez 
 php -v
 ~~~
 
-Si vous n’obtenez pas un message similaire à celui de l'image ci-dessous, ce qui suit vous concerne. Sinon passez directement à la prochaine étape.
+Si vous n’obtenez pas un message similaire à celui de l'image ci-dessous, ce qui suit vous concerne. Sinon passez 
+directement à la prochaine étape.
 
 ![Console](../media/howto/cmd_php-version.png "Console")
 
@@ -48,16 +53,17 @@ Donc si vous n'obtenez pas ce message, rien de grave voici comment procéder :
 
 ## Modification de la variable d'environnement PATH
 
-
 Rendez-vous dans **Panneau de configuration > Système > Paramètres système avancés** :
 
 ![Propriétés système](../media/howto/system-properties.png "Propriétés système")
 
-Cliquez sur le bouton **Variables d’environnement…** puis dans variables système sélectionnez la variable nommée **Path** :
+Cliquez sur le bouton **Variables d’environnement…** puis dans variables système sélectionnez la variable 
+nommée **Path** :
 
 ![Path système](../media/howto/system-path1.png "Path système")
 
-Cliquez sur **Modifier…** Et ajouter la ligne de texte suivante (en adaptant le chemin à votre installation de wamp) à la fin de ce qui est déjà noté :
+Cliquez sur **Modifier…** Et ajouter la ligne de texte suivante (en adaptant le chemin à votre installation de wamp) à 
+la fin de ce qui est déjà noté :
 
 ![Path système](../media/howto/system-path-php.png "Path système")
 
@@ -82,9 +88,12 @@ Faites clic-gauche sur l’icône de Wamp dans la barre des tâches > Apache > A
 
 ## Pour les modules php
 
-Faites clic-gauche sur l’icône de Wamp > PHP > PHP Extensions > cochez **php_intl, php_xmlrpc, php_pdo_mysql, php_sqlite3, php_mbstring**
+Faites clic-gauche sur l’icône de Wamp > PHP > PHP Extensions > cochez **php_intl, php_xmlrpc, php_pdo_mysql, php_
+sqlite3, php_mbstring**
 
-Symfony2 recommande également l’utilisation du module **php_apc** pour accélérer le rendu des pages mais **je vous le déconseille pour l’environnement de développement** car il pose quelques problèmes avec phpmyadmin et je ne traiterai pas de la cohabitation entre apc et pma ici. (Peut-être dans un article future)
+Symfony2 recommande également l’utilisation du module **php_apc** pour accélérer le rendu des pages mais 
+**je vous le déconseille pour l’environnement de développement** car il pose quelques problèmes avec phpmyadmin et je ne 
+traiterai pas de la cohabitation entre apc et pma ici.
 
 ## Test de Symfony2
 
@@ -95,8 +104,3 @@ Placez ensuite le répertoire Symfony dans votre répertoire web (par défaut **
 l’adresse : [http://localhost/Symfony/app/check.php](http://localhost/Symfony/app/check.php)
 
 Si Symfony2 ne vous donne pas de recommandations, c’est que vous êtes prêt à déployer des pojets avec symfony2 !
-
-Dans le cas contraire je vous invite à relire le tutoriel afin de vérifier que vous n’ayez rien oublié et à me contacter si j’ai omis quelque chose dans ce tuto.
-
-N’hésitez-pas à poser une question si besoin je vous y répondrai dès que possible ;) Bon code !
-
