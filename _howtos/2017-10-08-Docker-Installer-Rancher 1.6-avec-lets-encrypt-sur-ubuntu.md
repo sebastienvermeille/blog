@@ -286,7 +286,7 @@ crontab -e
 Nous aborderons d'autres points intéressants dans d'autre tutos à venir.
 
 # Credits
-https://store.docker.com/editions/community/docker-ce-server-ubuntu
-https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository
-https://medium.com/@chvanikoff/setting-up-rancher-with-ssl-d0491f258720
-http://rancher.com/docs/rancher/latest/en/installing-rancher/installing-server/
+* [Docker documentation](https://store.docker.com/editions/community/docker-ce-server-ubuntu)
+* [Docker documentation](https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository)
+* [Medium](https://medium.com/@chvanikoff/setting-up-rancher-with-ssl-d0491f258720)
+* [Rancher documentation](http://rancher.com/docs/rancher/latest/en/installing-rancher/installing-server/)

@@ -99,7 +99,8 @@ Cliquez sur "Infrastructure > Hosts > Add a Host"
 
 Retournez sur "Infrastructure > Hosts" et tadaaa vous avez votre premier Host installé.
 
-On peut biensur en ajouter d'autre et c'est même vivement recommandé.
+On peut biensur en ajouter d'autres et c'est même vivement recommandé car cela va vous permettre de répliquer nos services
+en mode horizontal (Horizontal scaling)
 
 # Les Stacks
 
