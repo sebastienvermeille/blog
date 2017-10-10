@@ -7,7 +7,7 @@ cover: ../media/cover/rancher.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-10-08-Docker-Installer-Rancher%201.6-avec-lets-encrypt-sur-ubuntu.md
 tags: ['docker', 'rancher', 'ssl', 'lets encrypt', 'linux']
 ---
 

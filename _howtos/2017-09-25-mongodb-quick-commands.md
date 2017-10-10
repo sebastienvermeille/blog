@@ -7,7 +7,7 @@ cover: ../media/cover/mongodb.png
 lang: "fr"
 published: true
 comments: true
-github: https://github.com/sebastienvermeille/code.svermeille.com/blob/master/src/content/Databases/desactiver-les-foreign-keys-sur-mariadb-ou-mysql.md
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-09-25-mongodb-quick-commands.md
 tags: ['mariadb', 'mysql']
 ---
 

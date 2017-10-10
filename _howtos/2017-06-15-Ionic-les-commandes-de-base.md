@@ -7,7 +7,7 @@ cover: ../media/cover/ionic.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-06-15-Ionic-les-commandes-de-base.md
 tags: ['ionic']
 ---
 

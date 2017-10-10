@@ -7,7 +7,7 @@ cover: ../media/cover/virtualbox.png
 lang: "fr"
 published: true
 comments: true
-github: todo
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-06-27-Ubuntu-uefi-virtualbox-verr-vm-driver-not-installed-fix.md
 tags: ['ubuntu', 'linux', 'virtualbox']
 ---
 Erreurs au lancement d'une vm sur virtualbox:

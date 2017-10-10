@@ -7,7 +7,7 @@ cover: ../media/cover/postgresql.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-07-06-Postgresql-ecrire-des-requetes-performantes.md
 tags: ['postgresql', 'linux']
 ---
 

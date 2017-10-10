@@ -7,7 +7,7 @@ cover: ../media/cover/postgresql.png
 lang: "fr"
 published: true
 comments: true
-github: 
+github: https://github.com/sebastienvermeille/blog/blob/master/_howtos/2017-06-21-Postgresql-les-commandes-de-bases-sous-linux
 tags: ['postgresql', 'linux']
 ---
 
