@@ -100,6 +100,21 @@ contient la mise à jour. Rancher est très flexible :)
 
 # C'est parti on fait une mise à jour sans interruption
 
-TODO
+Cliquez sur le bouton **Upgrade** de votre stack:
 
+![](/media/howto/rancher-upgrade-button.png)
 
+Remplissez le formulare et voici ce qui se passe:
+
+![](/media/howto/rancher-upgrade-container.gif)
+
+Vous avez plusieurs choix après un upgrade:
+
+* Valider l'upgrade (finish)
+* Annuler l'upgrade (rollback)
+
+![](/media/howto/rancher-upgrade-actions.png)
+
+# Conclusion
+
+Nous avons vu comment déployer un container et le mettre à jour sans interruption avec Rancher, un outil indispensable.
