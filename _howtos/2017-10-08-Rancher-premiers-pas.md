@@ -119,9 +119,8 @@ services :
 Si comme moi vous avez des projets privés et que vous ne souhaitez pas publier votre code source sur DockerHub (Pour
 un site perso par exemple), vous allez avoir besoin d'un repository docker dit: privé (Private docker registry).
 
-> Sachez que gitlab (copie de github) vous permet d'héberger des repository git privés gratuitement mais et ce n'est pas tout
-également de builder vos images docker et de les publier sur un repository privé gitlab dont vous seul avec l'accès ! Et tout
-cela gratuitement :)
+> Gitlab propose de builder vos images docker et de les publier sur un repository privé gitlab dont vous
+seul avec l'accès ! Et tout cela gratuitement :)
 
 Revenons à nos moutons donc sur Rancher on peut très facilement ajouter des repo dockers privés ou publics via l'interface.
 
